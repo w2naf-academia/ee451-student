@@ -1,0 +1,80 @@
+# EE 451: Communications Systems
+# Conda Environment Configuration
+#
+# This environment is designed to work with radioconda, which provides
+# GNU Radio and SDR tools pre-configured.
+#
+# Installation:
+#   1. Install radioconda: https://github.com/ryanvolz/radioconda
+#   2. Create environment: conda env create -f environment.yml
+#   3. Activate: conda activate ee451
+#
+# Or with standard conda/miniconda:
+#   conda env create -f environment.yml
+#   conda activate ee451
+
+name: ee451
+
+channels:
+  - conda-forge
+  - defaults
+
+dependencies:
+  # Core Python
+  - python>=3.10
+
+  # Jupyter ecosystem
+  - jupyterlab>=4.0
+  - notebook
+  - ipywidgets
+  - ipympl
+
+  # Scientific computing
+  - numpy>=1.24
+  - scipy>=1.10
+  - matplotlib>=3.7
+
+  # Signal processing
+  - scikit-learn
+
+  # Audio processing (for some demos)
+  - sounddevice
+  - soundfile
+
+  # Data handling
+  - pandas
+
+  # Additional utilities
+  - tqdm
+  - pillow
+
+  # For interactive plots
+  - plotly
+
+  # Optional: GNU Radio (if using radioconda, this is pre-installed)
+  # Uncomment if using standard conda and need GNU Radio:
+  # - gnuradio>=3.10
+
+  # Optional: RTL-SDR support (if using radioconda, this is pre-installed)
+  # Uncomment if using standard conda:
+  # - rtl-sdr
+  # - soapysdr
+
+# Notes:
+#
+# Radioconda Installation (Recommended):
+#   Radioconda is a conda distribution that includes GNU Radio, RTL-SDR,
+#   and many SDR tools pre-configured. Download from:
+#   https://github.com/ryanvolz/radioconda/releases
+#
+#   After installing radioconda, create this environment with:
+#   conda env create -f environment.yml
+#
+# Standard Conda/Miniconda:
+#   If not using radioconda, you can still use this environment for
+#   Python/Jupyter work. GNU Radio labs will require separate installation.
+#
+# Verification:
+#   After activation, verify with:
+#   python -c "import numpy, scipy, matplotlib; print('Core packages OK')"
+#   jupyter lab --version
