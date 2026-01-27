@@ -195,7 +195,7 @@ conda install -c conda-forge jupyterlab
 
 ## Acknowledgments
 
-This course material was prepared by Nathaniel Frissell using [Claude.ai](https://claude.ai).
+This course material was prepared by Nathaniel Frissell with assistance from [Claude.ai](https://claude.ai).
 
 - **W3USR amateur radio station** for equipment access and demonstrations
 - **Case Western Reserve University (W8EDU)** for Baba Yaga's Hut phasor lab materials

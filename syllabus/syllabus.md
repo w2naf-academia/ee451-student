@@ -268,4 +268,6 @@ Please review the separate **University Policies and Resources** document for im
 
 ---
 
+*This course material was prepared by Nathaniel Frissell with assistance from [Claude.ai](https://claude.ai).*
+
 *The instructor reserves the right to modify this document and will give students advanced notice.*
