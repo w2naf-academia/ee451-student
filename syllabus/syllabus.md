@@ -2,7 +2,7 @@
 
 **EE 451 • Section 1 • CRN 31101**
 
-**Spring 2026 • TR 2:15–3:45 PM (3 Credits) • Loyola Science Center**
+**Spring 2026 • TR 2:30–3:45 PM (3 Credits) • Loyola Science Center Room 142**
 
 ---
 
@@ -13,7 +13,7 @@ Department of Physics and Engineering
 174 Loyola Science Center<br>
 (570) 941-7003<br>
 nathaniel.frissell@scranton.edu<br>
-Office Hours: TBD
+Office Hours: W 9-10 AM, 11 AM-12 PM; R 9-10 AM
 
 ---
 
@@ -166,7 +166,7 @@ The grading scale below represents the minimum guaranteed letter grade for a giv
 
 ## Course Schedule
 
-Class meets Tuesday & Thursday, 2:15–3:45 PM.
+Class meets Tuesday & Thursday, 2:30–3:45 PM.
 
 ### Phase 1: Foundation (Weeks 1–2)
 
@@ -246,9 +246,9 @@ Class meets Tuesday & Thursday, 2:15–3:45 PM.
 |      |      | *W3USR: Satellite communications* | |
 |      |      | *May 14: No class (Hamvention)* | |
 
-### Final Exam (Week 16: May 18–22)
+### Final Exam (Thursday, May 21, 12:45–2:45 PM)
 
-Comprehensive exam covering all course material, with emphasis on noise and system performance (Chapters 8–11). Date/time per university schedule.
+Comprehensive exam covering all course material, with emphasis on noise and system performance (Chapters 8–11).
 
 ---
 

@@ -7,7 +7,6 @@ Welcome to EE 451! This folder contains course materials including lecture noteb
 ## Contents
 
 ```
-share_with_students/
 ├── README.md              # This file
 ├── environment.yml        # Conda environment configuration
 ├── lectures/              # Lecture materials
@@ -42,7 +41,13 @@ share_with_students/
     ├── syllabus/
     ├── exams/
     ├── labs/
+    │   ├── gnuradio_lab_1_fm_wifi.pdf
+    │   ├── gnuradio_lab_2_noise_snr.pdf
+    │   ├── w3usr_activity_1_hf_tour.pdf
+    │   ├── w3usr_activity_2_digital_modes.pdf
+    │   └── w3usr_activity_3_satellite.pdf
     └── resources/
+        ├── w3usr_equipment.pdf
         ├── GE-Frequency-Modulation-Primer-(1941).pdf
         └── the-hut-on-phasors-legs.pdf
 ```

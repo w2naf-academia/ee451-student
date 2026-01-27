@@ -1,7 +1,7 @@
 # EE 451: Communications Systems
 ## Detailed Lesson-by-Lesson Schedule - Spring 2026
 
-**Class Meeting Times:** Tuesday & Thursday, 2:15 PM - 3:45 PM<br>
+**Class Meeting Times:** Tuesday & Thursday, 2:30 PM - 3:45 PM, Loyola Science Center Room 142<br>
 **Textbook:** An Introduction to Analog and Digital Communications (2nd Ed.), Haykin & Moher
 
 ---
@@ -102,7 +102,6 @@
 
 **Lab/Activity:** Python/Jupyter setup and environment check
 - Install course software (Python, Jupyter, GNU Radio)
-- Verify RTL-SDR functionality (outputs I/Q samples)
 - Introduction to NumPy and Matplotlib for signal visualization
 
 #### Lesson 2 - Thursday, January 29
@@ -638,12 +637,11 @@
 
 ## Final Exam Period
 
-### Final Exam - Week 16 (May 18-22)
+### Final Exam - Thursday, May 21, 12:45–2:45 PM
 **Comprehensive Final Exam**
 - Coverage: All course material (Chapters 1-11)
 - Emphasis on noise, probability, and system performance (Chapters 8-11)
 - Format: Closed book, equation sheet provided
-- Date/Time: Per university final exam schedule
 
 ---
 
