@@ -37,9 +37,6 @@ dependencies:
   # Signal processing
   - scikit-learn
 
-  # Audio processing (for some demos)
-  - sounddevice
-  - soundfile
 
   # Data handling
   - pandas
@@ -50,6 +47,12 @@ dependencies:
 
   # For interactive plots
   - plotly
+
+  # Pip packages (not available on conda-forge for all platforms)
+  - pip
+  - pip:
+    - sounddevice
+    - soundfile
 
   # Optional: GNU Radio (if using radioconda, this is pre-installed)
   # Uncomment if using standard conda and need GNU Radio:
