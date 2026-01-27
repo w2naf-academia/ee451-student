@@ -1,55 +1,42 @@
 # EE 451: Communications Systems - Student Materials
 
-**Spring 2026**
+**Spring 2026 | TR 2:30-3:45 PM | Loyola Science Center Room 142**
 
-Welcome to EE 451! This folder contains course materials including lecture notebooks, homework assignments, and resources.
+Welcome to EE 451! This repository contains course materials including lecture notebooks, homework assignments, and resources.
+
+**Final Exam:** Thursday, May 21, 12:45-2:45 PM
 
 ## Contents
 
 ```
-├── README.md              # This file
-├── environment.yml        # Conda environment configuration
-├── lectures/              # Lecture materials
-│   └── lecture_XX_notebook.ipynb   # Interactive Jupyter notebooks
-├── labs/                  # Lab worksheets (submit to Brightspace)
-│   ├── python_lab_1_fourier.ipynb
-│   ├── python_lab_2_am_ask.ipynb
-│   ├── python_lab_3_cdma.ipynb
-│   ├── python_lab_4_qam_evm.ipynb
-│   ├── python_lab_5_ber.ipynb
-│   ├── gnuradio_lab_1_fm_wifi.md
-│   ├── gnuradio_lab_2_noise_snr.md
-│   ├── w3usr_activity_1_hf_tour.md
-│   ├── w3usr_activity_2_digital_modes.md
-│   └── w3usr_activity_3_satellite.md
-├── homework/              # Homework assignments (Markdown)
-│   ├── homework_1.md
-│   ├── homework_2.md
-│   └── ...
-├── syllabus/              # Course documents (Markdown)
+├── README.md                 # This file
+├── environment.yml           # Conda environment configuration
+├── lectures/                 # Interactive Jupyter notebooks
+│   └── lecture_XX_notebook.ipynb
+├── labs/                     # Lab worksheets
+│   ├── python_lab_*.ipynb        # Python/Jupyter labs
+│   ├── gnuradio_lab_*.md         # GNU Radio labs
+│   └── w3usr_activity_*.md       # W3USR station activities
+├── homework/                 # Homework assignments
+│   └── homework_*.md
+├── syllabus/                 # Course documents
 │   ├── syllabus.md
 │   ├── ee451_detailed_schedule.md
 │   └── university_policies_resources.md
-├── resources/             # Additional materials (Markdown)
-│   └── w3usr_equipment.md
-├── exams/                 # Exam study guides (Markdown)
+├── exams/                    # Exam study guides
 │   ├── midterm_1_study_guide.md
 │   ├── midterm_2_study_guide.md
 │   └── final_exam_study_guide.md
-└── pdf/                   # PDF versions (for Brightspace upload)
+├── resources/                # Reference materials
+│   ├── w3usr_equipment.md
+│   ├── GE-Frequency-Modulation-Primer-(1941).pdf
+│   └── the-hut-on-phasors-legs.pdf
+└── pdf/                      # PDF versions for Brightspace
     ├── homework/
     ├── syllabus/
     ├── exams/
     ├── labs/
-    │   ├── gnuradio_lab_1_fm_wifi.pdf
-    │   ├── gnuradio_lab_2_noise_snr.pdf
-    │   ├── w3usr_activity_1_hf_tour.pdf
-    │   ├── w3usr_activity_2_digital_modes.pdf
-    │   └── w3usr_activity_3_satellite.pdf
     └── resources/
-        ├── w3usr_equipment.pdf
-        ├── GE-Frequency-Modulation-Primer-(1941).pdf
-        └── the-hut-on-phasors-legs.pdf
 ```
 
 **Note:** Markdown files are the primary format and render nicely on GitHub. PDF versions are in the `pdf/` subdirectory for uploading to Brightspace.
@@ -72,8 +59,8 @@ Choose the installer for your operating system:
 After installing radioconda, open a terminal (or Anaconda Prompt on Windows) and run:
 
 ```bash
-# Navigate to this folder
-cd path/to/share_with_students
+# Navigate to this repository
+cd path/to/ee451-student
 
 # Create the environment
 conda env create -f environment.yml
@@ -215,4 +202,4 @@ This course material was prepared by Nathaniel Frissell using [Claude.ai](https:
 
 ---
 
-Good luck with EE 451! 📡
+Good luck with EE 451!
