@@ -1,7 +1,7 @@
 # EE 451: Communications Systems
 # Midterm Exam 2 - Study Guide
 
-**Exam Date:** Week 11 (April 15, 2026)
+**Exam Date:** Week 12 (Tuesday, April 21, 2026)
 **Duration:** 90 minutes
 **Coverage:** Chapters 4-7 (FM, PM, FSK, PSK, M-ary Modulation, QAM)
 **Format:** Closed book, one 8.5" × 11" formula sheet (both sides) allowed

@@ -2,6 +2,8 @@
 
 **EE 451: Communications Systems**
 
+**⭐ OPTIONAL EXTRA CREDIT ACTIVITY ⭐**
+
 **Name:** _________________________ **Date:** _____________
 
 ---

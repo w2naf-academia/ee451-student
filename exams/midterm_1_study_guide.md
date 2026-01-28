@@ -1,7 +1,7 @@
 # EE 451: Communications Systems
 # Midterm Exam 1 - Study Guide
 
-**Exam Date:** Week 5 (February 25, 2026)
+**Exam Date:** Week 5 (Thursday, February 26, 2026)
 **Duration:** 90 minutes
 **Coverage:** Chapters 2-3, 7.1-7.2 (Fourier Analysis & Amplitude Modulation)
 **Format:** Closed book, one 8.5" × 11" formula sheet (both sides) allowed

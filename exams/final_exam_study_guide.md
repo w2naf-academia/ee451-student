@@ -1,7 +1,7 @@
 # EE 451: Communications Systems
 # Final Exam - Comprehensive Study Guide
 
-**Exam Date:** Week 16 (May 18-22, 2026)
+**Exam Date:** Thursday, May 21, 2026 (12:45-2:45 PM)
 **Duration:** 180 minutes (3 hours)
 **Coverage:** All course material (Chapters 1-11) with emphasis on Chapters 8-11
 **Format:** Closed book, one 8.5" × 11" formula sheet (both sides) allowed
@@ -598,8 +598,8 @@ For log₂(x): log₂(x) = log₁₀(x)/log₁₀(2) ≈ 3.32·log₁₀(x)
 
 ### Days 7-6: New Material (Priority 🔴)
 
-- **Study:** Homework 5 (all 10 problems) - Probability & Noise
-- **Study:** Homework 6 (all 10 problems) - BER & Link Budgets
+- **Study:** Homework 5 (all problems) - Probability, noise, SNR
+- **Practice:** BER and link budget problems from lecture notebooks
 - **Practice:** Midterm 1 solutions (Problems 7-9)
 - **Focus:** Link budget procedure, Q-function, thermal noise
 

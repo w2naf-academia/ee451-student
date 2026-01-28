@@ -107,7 +107,7 @@ The grade breakdown of this course will consist of the following weighted compon
 
 | Component | Weight | Description |
 |-----------|--------|-------------|
-| Homework | 15% | 6 assignments |
+| Homework | 15% | 5 assignments |
 | Lab Reports | 15% | Python, GNU Radio, Phasor, and W3USR activities |
 | Reading Quizzes | 10% | Via Brightspace |
 | Exams | 50% | 2 midterms (15% each) + final (20%) |
@@ -117,11 +117,11 @@ See the detailed schedule for specific due dates and topics.
 
 ### Homework (15%)
 
-Six homework assignments covering course topics. You may collaborate with fellow class members; working together is encouraged. However, do not directly copy each other's solutions—this is considered cheating. If you work together, put down solutions in your own words and equations. Do not copy any solution from the internet. Violations will result in a zero for that assignment and possible reporting to the Dean. Late homework will not be accepted without extenuating circumstances.
+Five homework assignments covering course topics. You may collaborate with fellow class members; working together is encouraged. However, do not directly copy each other's solutions—this is considered cheating. If you work together, put down solutions in your own words and equations. Do not copy any solution from the internet. Violations will result in a zero for that assignment and possible reporting to the Dean. Late homework will not be accepted without extenuating circumstances.
 
 ### Lab Reports (15%)
 
-Hands-on laboratory activities include Python/Jupyter simulations (5 labs), GNU Radio with RTL-SDR (2 labs), "Baba Yaga's Hut" phasor analysis (2 sessions), and W3USR amateur radio station activities (3 sessions). Lab reports are due one week after the lab session unless otherwise specified.
+Hands-on laboratory activities include Python/Jupyter simulations (5 labs), GNU Radio with RTL-SDR (2 labs), "Baba Yaga's Hut" phasor analysis (2 sessions), and W3USR amateur radio station activities (2 sessions, with optional satellite extra credit). Lab reports are due one week after the lab session unless otherwise specified.
 
 ### Reading Quizzes (10%)
 
@@ -234,16 +234,16 @@ Class meets Tuesday & Thursday, 2:30–3:45 PM.
 | 13   | Apr 28 | **Noise in Communication Systems** | Ch 9, 11.1–11.3 |
 |      |      | Thermal noise, AWGN, noise figure | |
 |      |      | SNR in AM and FM, FM threshold effect | |
-|      |      | *GNU Radio Lab 2: Noise and SNR analysis* | |
+|      |      | *W3USR: Digital modes (FT8, APRS)* | |
 | 14   | May 5 | **Digital Performance & Channel Coding** | Ch 10 |
 |      |      | BER fundamentals, matched filtering | |
 |      |      | BER for BPSK, FSK, QAM; EVM vs BER | |
 |      |      | Channel coding: LDPC, Turbo, Polar codes | |
-|      |      | *Python Lab 5: BER simulation* | |
+|      |      | *GNU Radio Lab 2: Noise and SNR analysis* | |
 | 15   | May 12 | **Link Budgets & Modern Systems** | Ch 11.4–11.7 |
 |      |      | Link budget calculations, path loss | |
 |      |      | WiFi, LTE, 5G overview; SDR concepts | |
-|      |      | *W3USR: Satellite communications* | |
+|      |      | *Python Lab 5: BER simulation* | |
 |      |      | *May 14: No class (Hamvention)* | |
 
 ### Final Exam (Thursday, May 21, 12:45–2:45 PM)
