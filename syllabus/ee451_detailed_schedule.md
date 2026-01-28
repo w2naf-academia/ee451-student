@@ -8,12 +8,11 @@
 
 ## Reading Quiz Schedule
 
-10 reading quizzes administered through Brightspace (10 questions randomly selected from 50-question banks):
+Reading quizzes administered through Brightspace at the beginning of selected classes:
 
 | Lesson | Date | Topic | Reading |
 |--------|------|-------|---------|
-| 2 | Thu, Jan 29 | Fourier Transform and Signals | Chapter 2.1 |
-| 3 | Tue, Feb 3 | Filtering and Distortion, Bandpass Signals, Hilbert Transform | Chapter 2.2-2.5 |
+| 3 | Tue, Feb 3 | Fourier Transform, Signals, Filtering, Bandpass Signals, Hilbert Transform | Chapter 2.1-2.5 |
 | 5 | Tue, Feb 10 | Amplitude Modulation Techniques | Chapter 3.1-3.3 |
 | 7 | Tue, Feb 17 | SSB, VSB, and Receiver Architectures | Chapter 3.6-3.8 |
 | 11 | Tue, Mar 3 | FM/PM Theory and Modulation | Chapter 4.1-4.5 |
@@ -22,8 +21,6 @@
 | 23 | Tue, Apr 21 | Probability and Random Variables | Chapter 8.1-8.4 |
 | 25 | Tue, Apr 28 | Noise in Communication Systems | Chapter 9 |
 | 27 | Tue, May 5 | Digital Performance and BER | Chapter 10 |
-
-**Total Points:** 100 (10 quizzes × 10 points each)
 
 ---
 
@@ -112,11 +109,6 @@
 - Introduction to analytic signals
 - Reading: Chapter 2.1
 
-**📝 READING QUIZ 1** (10 points)
-- Topic: Fourier Transform and Signals
-- 10 questions randomly selected from 50-question bank
-- Administered via Brightspace at beginning of class
-
 **Note:** Correlation, a related operation to convolution, will be introduced in Lesson 4 after we study Fourier transforms. Correlation is essential for matched filtering and signal detection in communication systems.
 
 **Homework 1 Assigned:** Complex numbers, phasors, basic signal operations
@@ -133,9 +125,8 @@
 - Bandwidth concepts
 - Reading: Chapter 2.2-2.5
 
-**📝 READING QUIZ 2** (10 points)
-- Topic: Filtering and Distortion, Bandpass Signals, Hilbert Transform
-- 10 questions randomly selected from 50-question bank
+**📝 READING QUIZ 1**
+- Topic: Fourier Transform, Signals, Filtering, Bandpass Signals, Hilbert Transform
 - Administered via Brightspace at beginning of class
 
 **Lab:** Python Lab 1 - Fourier Analysis
@@ -168,9 +159,8 @@
 - Modulation index and overmodulation
 - Reading: Chapter 3.1-3.3
 
-**📝 READING QUIZ 3** (10 points)
+**📝 READING QUIZ 2**
 - Topic: Amplitude Modulation Techniques
-- 10 questions randomly selected from 50-question bank
 - Administered via Brightspace at beginning of class
 
 #### Lesson 6 - Thursday, February 12
@@ -201,9 +191,8 @@
 - Vestigial Sideband (VSB) - brief overview
 - Reading: Chapter 3.6-3.8
 
-**📝 READING QUIZ 4** (10 points)
+**📝 READING QUIZ 3**
 - Topic: SSB, VSB, and Receiver Architectures
-- 10 questions randomly selected from 50-question bank
 - Administered via Brightspace at beginning of class
 
 #### Lesson 8 - Thursday, February 19
@@ -252,9 +241,8 @@
 - Wideband FM characteristics
 - Reading: Chapter 4.1-4.5
 
-**📝 READING QUIZ 5** (10 points)
+**📝 READING QUIZ 4**
 - Topic: FM/PM Theory and Modulation
-- 10 questions randomly selected from 50-question bank
 - Administered via Brightspace at beginning of class
 
 #### Lesson 12 - Thursday, March 5
@@ -280,9 +268,8 @@
 - PLL-based FM demodulation (operates on IQ baseband)
 - Reading: Chapter 4.6-4.8
 
-**📝 READING QUIZ 6** (10 points)
+**📝 READING QUIZ 5**
 - Topic: FM Generation and Demodulation
-- 10 questions randomly selected from 50-question bank
 - Administered via Brightspace at beginning of class
 
 #### Lesson 14 - Thursday, March 12
@@ -357,9 +344,8 @@
 - Why synchronization is critical in practice
 - Reading: Chapter 6
 
-**📝 READING QUIZ 7** (10 points)
+**📝 READING QUIZ 6**
 - Topic: Pulse Modulation and Digital Transmission
-- 10 questions randomly selected from 50-question bank
 - Administered via Brightspace at beginning of class
 
 #### Lesson 18 - Thursday, April 2
@@ -512,9 +498,8 @@
 - Fundamental limits of communication systems
 - Reading: Chapter 8.1-8.2
 
-**📝 READING QUIZ 8** (10 points)
+**📝 READING QUIZ 7**
 - Topic: Probability and Random Variables
-- 10 questions randomly selected from 50-question bank
 - Administered via Brightspace at beginning of class
 
 #### Lesson 24 - Thursday, April 23
@@ -540,9 +525,8 @@
 - Noise figure and noise temperature
 - Reading: Chapter 9
 
-**📝 READING QUIZ 9** (10 points)
+**📝 READING QUIZ 8**
 - Topic: Noise in Communication Systems
-- 10 questions randomly selected from 50-question bank
 - Administered via Brightspace at beginning of class
 
 #### Lesson 26 - Thursday, April 30
@@ -573,9 +557,8 @@
 - Decision regions
 - Reading: Chapter 10
 
-**📝 READING QUIZ 10** (10 points)
+**📝 READING QUIZ 9**
 - Topic: Digital Performance and BER
-- 10 questions randomly selected from 50-question bank
 - Administered via Brightspace at beginning of class
 
 #### Lesson 28 - Thursday, May 7

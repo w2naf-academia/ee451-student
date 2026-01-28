@@ -109,7 +109,7 @@ The grade breakdown of this course will consist of the following weighted compon
 |-----------|--------|-------------|
 | Homework | 15% | 6 assignments |
 | Lab Reports | 15% | Python, GNU Radio, Phasor, and W3USR activities |
-| Reading Quizzes | 10% | 10 quizzes via Brightspace |
+| Reading Quizzes | 10% | Via Brightspace |
 | Exams | 50% | 2 midterms (15% each) + final (20%) |
 | Course Notebook | 10% | Daily diary and final essay |
 
@@ -125,7 +125,7 @@ Hands-on laboratory activities include Python/Jupyter simulations (5 labs), GNU 
 
 ### Reading Quizzes (10%)
 
-Ten reading quizzes administered through Brightspace at the beginning of selected classes. Each quiz has 10 multiple-choice questions randomly selected from a 50-question bank covering the assigned reading. Purpose: Encourage students to read assigned textbook sections before class.
+Reading quizzes administered through Brightspace at the beginning of selected classes. Multiple-choice questions are randomly selected from a question bank covering the assigned reading. Purpose: Encourage students to read assigned textbook sections before class.
 
 ### Exams (50%)
 
