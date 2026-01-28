@@ -1,10 +1,6 @@
 # EE 451: Communications Systems - Student Materials
 
-**Spring 2026 | TR 2:30-3:45 PM | Loyola Science Center Room 142**
-
 Welcome to EE 451! This repository contains course materials including lecture notebooks, homework assignments, and resources.
-
-**Final Exam:** Thursday, May 21, 12:45-2:45 PM
 
 ## Contents
 
