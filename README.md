@@ -78,7 +78,7 @@ Choose the installer for your operating system:
 
 ### 4. Create the Course Environment
 
-After installing radioconda, open a terminal (or Anaconda Prompt on Windows) and run:
+After installing radioconda, open a terminal (or Radioconda Prompt on Windows) and run:
 
 ```bash
 # Navigate to the repository
@@ -104,7 +104,7 @@ In Jupyter Lab, navigate to `lectures/lecture_01/lecture_01_notebook.ipynb` and 
 
 ## Updating Course Materials
 
-Course materials will be updated throughout the semester. To get the latest versions, open a terminal (or Anaconda Prompt on Windows) and run:
+Course materials will be updated throughout the semester. To get the latest versions, open a terminal (or Radioconda Prompt on Windows) and run:
 
 ```bash
 cd ~/Documents/ee451-student
@@ -132,7 +132,7 @@ git pull
 
 ### Before Each Lecture
 
-Open a terminal (or Anaconda Prompt on Windows) and run:
+Open a terminal (or Radioconda Prompt on Windows) and run:
 
 ```bash
 conda activate ee451
@@ -211,7 +211,7 @@ For RTL-SDR experiments, you'll also need an RTL-SDR USB dongle (available from 
 
 ### "conda: command not found"
 
-Make sure you've installed radioconda and it's in your PATH. On Windows, use the "Anaconda Prompt" instead of regular Command Prompt.
+Make sure you've installed radioconda and it's in your PATH. On Windows, use the "Radioconda Prompt" instead of regular Command Prompt.
 
 ### Package import errors
 
