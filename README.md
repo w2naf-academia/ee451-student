@@ -39,7 +39,33 @@ Welcome to EE 451! This repository contains course materials including lecture n
 
 ## Getting Started
 
-### 1. Install Radioconda
+### 1. Install Git
+
+Git is a version control tool we use to distribute and update course materials.
+
+- **Windows:** Download from https://git-scm.com/downloads/win and run the installer. Use the default options.
+- **macOS:** Open Terminal and run `xcode-select --install`, which installs Git along with other developer tools.
+- **Linux:** Install via your package manager (e.g., `sudo apt install git` on Ubuntu/Debian).
+
+To verify Git is installed, open a terminal (or Git Bash on Windows) and run:
+
+```bash
+git --version
+```
+
+### 2. Clone the Course Repository
+
+Open a terminal and navigate to where you want to store your course files, then clone the repository:
+
+```bash
+cd ~/Documents   # or wherever you prefer
+git clone https://github.com/w2naf-academia/ee451-student.git
+cd ee451-student
+```
+
+This creates a local copy of all course materials on your computer. See [Updating Course Materials](#updating-course-materials) for how to get updates throughout the semester.
+
+### 3. Install Radioconda
 
 Radioconda is a conda distribution that includes Python, Jupyter, GNU Radio, and SDR tools pre-configured.
 
@@ -50,13 +76,13 @@ Choose the installer for your operating system:
 - **macOS:** `radioconda-*-MacOSX-x86_64.pkg` (Intel) or `radioconda-*-MacOSX-arm64.pkg` (Apple Silicon)
 - **Linux:** `radioconda-*-Linux-x86_64.sh`
 
-### 2. Create the Course Environment
+### 4. Create the Course Environment
 
 After installing radioconda, open a terminal (or Anaconda Prompt on Windows) and run:
 
 ```bash
-# Navigate to this repository
-cd path/to/ee451-student
+# Navigate to the repository
+cd ~/Documents/ee451-student
 
 # Create the environment
 conda env create -f environment.yml
@@ -65,31 +91,61 @@ conda env create -f environment.yml
 conda activate ee451
 ```
 
-### 3. Launch Jupyter Lab
+### 5. Verify Installation
 
-With the environment activated:
+With the `ee451` environment activated, launch Jupyter Lab and open the Lesson 1 notebook to verify everything works:
 
 ```bash
+conda activate ee451
 jupyter lab
 ```
 
-This will open Jupyter Lab in your web browser. Navigate to the `lectures/` folder to open the notebooks.
+In Jupyter Lab, navigate to `lectures/lecture_01/lecture_01_notebook.ipynb` and open it. Run all cells (Menu > Run > Run All Cells). If the notebook runs without errors and displays plots, your installation is working correctly.
 
-### 4. Verify Installation
+## Updating Course Materials
 
-In Jupyter Lab, create a new notebook and run:
+Course materials will be updated throughout the semester. To get the latest versions, open a terminal (or Anaconda Prompt on Windows) and run:
 
-```python
-import numpy as np
-import scipy
-import matplotlib.pyplot as plt
-
-print(f"NumPy: {np.__version__}")
-print(f"SciPy: {scipy.__version__}")
-print("Installation successful!")
+```bash
+cd ~/Documents/ee451-student
+git pull
 ```
 
+**If `git pull` fails** with a message about local changes conflicting with the update, it means you have modified files that the instructor has also updated. To resolve this, run:
+
+```bash
+git stash
+git pull
+git stash pop
+```
+
+This saves your local changes, pulls the update, then re-applies your changes on top. If you don't need to keep your local changes (e.g., you only added cell outputs by running notebooks), you can instead discard them and force the update:
+
+```bash
+git reset --hard
+git pull
+```
+
+**Warning:** `git reset --hard` permanently discards all local changes. If you have notes or work in any files that you want to keep, back them up first or use the `git stash` method above.
+
 ## Using the Lecture Notebooks
+
+### Before Each Lecture
+
+Open a terminal (or Anaconda Prompt on Windows) and run:
+
+```bash
+conda activate ee451
+cd ~/Documents/ee451-student
+git pull
+jupyter lab
+```
+
+Then navigate to the lecture notebook for that day (e.g., `lectures/lecture_02/lecture_02_notebook.ipynb`). Check the course schedule on Brightspace if you are unsure which lecture number corresponds to the current class.
+
+If `git pull` reports a conflict, see [Updating Course Materials](#updating-course-materials) above for how to resolve it.
+
+### During and After Class
 
 1. **Before class:** Read assigned textbook sections
 2. **During class:** Follow along with the Jupyter notebook on your laptop
