@@ -2,7 +2,7 @@
 # Midterm Exam 1 - Study Guide
 
 **Exam Date:** Week 5 (Thursday, February 26, 2026)
-**Duration:** 90 minutes
+**Duration:** 75 minutes
 **Coverage:** Chapters 2-3, 7.1-7.2 (Fourier Analysis & Amplitude Modulation)
 **Format:** Closed book, one 8.5" × 11" formula sheet (both sides) allowed
 
@@ -421,17 +421,17 @@ Boltzmann constant: k = 1.38 × 10⁻²³ J/K (probably not needed for Midterm 1
 
 ## Exam Strategy
 
-### Time Management (90 minutes total)
+### Time Management (75 minutes total)
 
-- **5 min:** Read entire exam, mark easy problems
-- **10 min:** Problem 1 (Fourier fundamentals - typically straightforward)
-- **10 min:** Problem 2 (Fourier properties)
-- **10 min:** Problem 3 (Parseval's theorem)
-- **20 min:** Problem 4 (AM analysis - usually longest)
-- **10 min:** Problem 5 (DSB-SC comparison)
-- **12 min:** Problem 6 (SSB and bandwidth)
+- **4 min:** Read entire exam, mark easy problems
+- **8 min:** Problem 1 (Fourier fundamentals - typically straightforward)
+- **8 min:** Problem 2 (Fourier properties)
+- **8 min:** Problem 3 (Parseval's theorem)
+- **17 min:** Problem 4 (AM analysis - usually longest)
+- **8 min:** Problem 5 (DSB-SC comparison)
+- **10 min:** Problem 6 (SSB and bandwidth)
 - **8 min:** Problem 7 (ASK bonus - if time permits)
-- **5 min:** Review and check answers
+- **4 min:** Review and check answers
 
 ### Problem-Solving Approach
 

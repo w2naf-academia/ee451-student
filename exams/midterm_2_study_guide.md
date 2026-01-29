@@ -2,7 +2,7 @@
 # Midterm Exam 2 - Study Guide
 
 **Exam Date:** Week 12 (Tuesday, April 21, 2026)
-**Duration:** 90 minutes
+**Duration:** 75 minutes
 **Coverage:** Chapters 4-7 (FM, PM, FSK, PSK, M-ary Modulation, QAM)
 **Format:** Closed book, one 8.5" × 11" formula sheet (both sides) allowed
 
@@ -667,17 +667,17 @@ Examples:
 
 ## Exam Strategy
 
-### Time Management (90 minutes)
+### Time Management (75 minutes)
 
-- **5 min:** Read entire exam
-- **15 min:** Problem 1 (FM fundamentals with Carson's rule)
-- **12 min:** Problem 2 (PM analysis)
-- **10 min:** Problem 3 (FM vs PM comparison)
-- **15 min:** Problem 4 (FSK system design)
-- **12 min:** Problem 5 (BPSK fundamentals)
-- **15 min:** Problem 6 (QPSK and Gray coding)
-- **6 min:** Problem 7 (MSK bonus if time)
-- **5 min:** Review
+- **4 min:** Read entire exam
+- **12 min:** Problem 1 (FM fundamentals with Carson's rule)
+- **10 min:** Problem 2 (PM analysis)
+- **8 min:** Problem 3 (FM vs PM comparison)
+- **12 min:** Problem 4 (FSK system design)
+- **10 min:** Problem 5 (BPSK fundamentals)
+- **13 min:** Problem 6 (QPSK and Gray coding)
+- **2 min:** Problem 7 (MSK bonus if time)
+- **4 min:** Review
 
 ### Problem-Solving Approach
 
