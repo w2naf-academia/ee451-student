@@ -12,15 +12,15 @@ Reading quizzes administered through Brightspace at the beginning of selected cl
 
 | Lesson | Date | Topic | Reading |
 |--------|------|-------|---------|
-| 2 | Tue, Feb 3 | Fourier Transform, Signals, Filtering, Bandpass Signals, Hilbert Transform | Chapter 2.1-2.5 |
+| 2 | Tue, Feb 3 | Fourier Transform, FT Properties, Dirac Delta, Periodic Signals | Chapter 2.1-2.5 |
 | 4 | Tue, Feb 10 | Amplitude Modulation Techniques | Chapter 3.1-3.3 |
-| 7 | Thu, Feb 19 | SSB, VSB, and Receiver Architectures | Chapter 3.6-3.8 |
+| 7 | Thu, Feb 19 | SSB, VSB, Receiver Architectures, ASK/OOK | Chapter 3.6-3.8, 7.1-7.2 |
 | 11 | Thu, Mar 5 | FM/PM Theory and Modulation | Chapter 4.1-4.5 |
-| 13 | Thu, Mar 12 | FM Generation and Demodulation | Chapter 4.6-4.8 |
-| 17 | Tue, Apr 7 | Pulse Modulation and Digital Transmission | Chapter 6 |
+| 13 | Thu, Mar 12 | FM Generation/Demodulation, FSK/BPSK | Chapter 4.6-4.8, 7.3-7.4 |
+| 17 | Tue, Apr 7 | Pulse Modulation and Baseband Digital Transmission | Chapter 5, 6 |
 | 22 | Thu, Apr 23 | Probability and Random Variables | Chapter 8.1-8.2 |
-| 25 | Tue, May 5 | Noise in Communication Systems | Chapter 9 |
-| 27 | Tue, May 12 | Digital Performance and BER | Chapter 10 |
+| 25 | Tue, May 5 | Random Variables, Noise in Analog Communications | Chapter 8.3-8.4, 9 |
+| 27 | Tue, May 12 | Digital Performance, BER, System Noise Calculations | Chapter 10, 11.1-11.3 |
 
 ---
 
@@ -31,7 +31,7 @@ Reading quizzes administered through Brightspace at the beginning of selected cl
 | Homework 1 | Thu, Jan 29 | Thu, Feb 5 | Complex numbers, phasors, signals |
 | Homework 2 | Thu, Feb 12 | Thu, Feb 19 | AM and ASK |
 | Homework 3 | Thu, Mar 5 | Thu, Mar 12 | FM, PM, FSK, BPSK |
-| Homework 4 | Tue, Apr 14 | Thu, Apr 16 | M-ary modulation, QAM, EVM |
+| Homework 4 | Thu, Apr 16 | Thu, Apr 23 | M-ary modulation, QAM, EVM |
 | Homework 5 | Thu, Apr 23 | Thu, May 7 | Probability, noise, SNR |
 
 ---
@@ -41,7 +41,7 @@ Reading quizzes administered through Brightspace at the beginning of selected cl
 | Exam | Date | Coverage |
 |------|------|----------|
 | Exam 1 | Thu, Feb 26 | Chapters 2-3, 7.1-7.2 (Fourier Analysis & AM) |
-| Exam 2 | Thu, Apr 16 | Chapters 4-7 (Modulation & Digital Systems) |
+| Exam 2 | Tue, Apr 21 | Chapters 4-7 (Modulation & Digital Systems) |
 | Final Exam | Thu, May 21 | Comprehensive (emphasis on Chapters 8-11) |
 
 ---
@@ -54,15 +54,15 @@ Reading quizzes administered through Brightspace at the beginning of selected cl
 |-----|------|------|-------|
 | Python Lab 1 | 2 | Thu, Feb 5 | Fourier Analysis and Spectral Visualization |
 | Python Lab 2 | 3 | Thu, Feb 12 | AM/ASK Modulation and Envelope Detection |
-| Python Lab 3 | 10 | Thu, Apr 9 | CDMA & Spread Spectrum Simulation |
-| Python Lab 4 | 11 | Tue, Apr 14 | QPSK/QAM Simulation with EVM Analysis |
+| Python Lab 3 | 11 | Tue, Apr 14 | CDMA & Spread Spectrum Simulation |
+| Python Lab 4 | 11 | Thu, Apr 16 | QPSK/QAM Simulation with EVM Analysis |
 | Python Lab 5 | 15 | Tue, May 12 | BER Performance Simulation |
 
 ### GNU Radio Labs
 
 | Lab | Week | Date | Topic |
 |-----|------|------|-------|
-| GNU Radio Lab 1 | 10 | Tue, Apr 7 | FM Broadcast Reception & WiFi Spectrum Analysis |
+| GNU Radio Lab 1 | 10 | Thu, Apr 9 | FM Broadcast Reception & WiFi Spectrum Analysis |
 | GNU Radio Lab 2 | 14 | Thu, May 7 | Noise Analysis and SNR Measurement |
 
 ### Baba Yaga's Hut Phasor Labs
@@ -113,7 +113,8 @@ Reading quizzes administered through Brightspace at the beginning of selected cl
 - Introduction to analytic signals
 
 **📝 READING QUIZ 1**
-- Topic: Fourier Transform, Signals, Filtering, Bandpass Signals, Hilbert Transform
+- Topic: Fourier Transform, FT Properties, Dirac Delta, Periodic Signals
+- Reading: Chapter 2.1-2.5
 - Administered via Brightspace at beginning of class
 
 **Note:** Correlation, a related operation to convolution, will be introduced in Lesson 4 after we study Fourier transforms. Correlation is essential for matched filtering and signal detection in communication systems.
@@ -149,6 +150,7 @@ Reading quizzes administered through Brightspace at the beginning of selected cl
 
 **📝 READING QUIZ 2**
 - Topic: Amplitude Modulation Techniques
+- Reading: Chapter 3.1-3.3
 - Administered via Brightspace at beginning of class
 
 #### Lesson 5 - Thursday, February 12
@@ -185,7 +187,8 @@ Reading quizzes administered through Brightspace at the beginning of selected cl
 - Vestigial Sideband (VSB) - brief overview
 
 **📝 READING QUIZ 3**
-- Topic: SSB, VSB, and Receiver Architectures
+- Topic: SSB, VSB, Receiver Architectures, ASK/OOK
+- Reading: Chapter 3.6-3.8, 7.1-7.2
 - Administered via Brightspace at beginning of class
 
 **Lab Activity:** W3USR Station Tour & HF Listening
@@ -234,6 +237,7 @@ Reading quizzes administered through Brightspace at the beginning of selected cl
 
 **📝 READING QUIZ 4**
 - Topic: FM/PM Theory and Modulation
+- Reading: Chapter 4.1-4.5
 - Administered via Brightspace at beginning of class
 
 **Homework 3 Assigned:** FM, PM, FSK, BPSK problems
@@ -259,7 +263,8 @@ Reading quizzes administered through Brightspace at the beginning of selected cl
 - PLL-based FM demodulation (operates on IQ baseband)
 
 **📝 READING QUIZ 5**
-- Topic: FM Generation and Demodulation
+- Topic: FM Generation/Demodulation, FSK/BPSK
+- Reading: Chapter 4.6-4.8, 7.3-7.4
 - Administered via Brightspace at beginning of class
 
 **Homework 3 Due**
@@ -297,7 +302,7 @@ Reading quizzes administered through Brightspace at the beginning of selected cl
 - Aliasing and anti-aliasing filters
 - Pulse Amplitude Modulation (PAM)
 - Natural and flat-top sampling
-- Reading: Chapter 5
+- Reading: Chapter 5 (part 1 of reading for Reading Quiz 6 in Lesson 17; see also Chapter 6 in Lesson 16)
 
 ---
 
@@ -312,7 +317,7 @@ Reading quizzes administered through Brightspace at the beginning of selected cl
 - Companding (μ-law and A-law)
 - Delta modulation and adaptive delta modulation
 - Line codes (NRZ, RZ, Manchester, etc.)
-- Reading: Chapter 6 (in preparation for Reading Quiz 6 in Lesson 17)
+- Reading: Chapter 6 (part 2 of reading for Reading Quiz 6 in Lesson 17; see also Chapter 5 in Lesson 15)
 
 **Lab:** **"Baba Yaga's Hut" - Phasor Analysis Lab (Part 2 of 2)**
 - Examine DSB-SC (suppressed carrier) signals
@@ -332,21 +337,35 @@ Reading quizzes administered through Brightspace at the beginning of selected cl
 ### Week 10
 
 #### Lesson 17 - Tuesday, April 7
-**Baseband Digital Transmission, ISI & OFDM Introduction**
-- Intersymbol Interference (ISI) concepts
-- Eye diagrams (separate I and Q channel displays)
-- Nyquist criterion for zero ISI
-- Raised cosine filtering
-- Causes of ISI in practical channels
-- Equalization concepts: why equalizers are needed
-- Multipath propagation in WiFi and cellular systems
-- Introduction to OFDM as modern solution to frequency-selective fading
-- OFDM basics: subcarriers, cyclic prefix, guard intervals
-- Why WiFi and LTE use OFDM instead of complex equalizers
+**Baseband Digital Transmission & Synchronization**
+- Intersymbol Interference (ISI): causes and effects
+- Eye diagrams: open vs. closed, noise margin, timing margin, jitter
+- Nyquist criterion for zero-ISI pulse shaping
+- Raised cosine filtering (roll-off factor α, bandwidth tradeoff)
+- Multipath propagation and OFDM preview (WiFi, LTE)
+- Carrier and symbol timing synchronization
+- Phase-Locked Loop (PLL) and Costas loop for carrier recovery
+- Timing recovery methods: early-late gate, Gardner algorithm
+- Python example: eye diagram generation with raised cosine filter
+- Reading: Chapter 5, 6
 
 **📝 READING QUIZ 6**
-- Topic: Pulse Modulation and Digital Transmission
+- Topic: Pulse Modulation and Baseband Digital Transmission
+- Reading: Chapter 5, 6
 - Administered via Brightspace at beginning of class
+
+#### Lesson 18 - Thursday, April 9
+**ISI Mitigation, OFDM & Spread Spectrum Introduction**
+- OFDM fundamentals: divide wideband channel into narrowband subcarriers
+- Subcarrier orthogonality and FFT/IFFT implementation
+- Cyclic prefix: absorbs multipath delay, converts to circular convolution
+- WiFi 802.11a/g OFDM parameters (64 subcarriers, 312.5 kHz spacing, 4 μs symbol)
+- OFDM advantages (multipath robust, adaptive modulation) and disadvantages (PAPR)
+- Direct Sequence Spread Spectrum (DSSS) introduction
+- Processing gain: spread BW / data BW (GPS example: 43 dB)
+- Frequency Hopping Spread Spectrum (FHSS) overview (Bluetooth: 79 channels, 1600 hops/sec)
+- Applications: WiFi 802.11b (DSSS), GPS (DSSS), Bluetooth (FHSS), military
+- Reading: Chapter 6, Supplemental materials
 
 **Lab:** GNU Radio Lab 1 - RTL-SDR FM Reception & WiFi Spectrum Analysis
 
@@ -374,19 +393,20 @@ Reading quizzes administered through Brightspace at the beginning of selected cl
 - Identify 802.11g/n preambles and OFDM spectrum shape
 - Compare OFDM spectrum (flat-topped, rectangular) to single-carrier FM (narrow, peaked)
 
-#### Lesson 18 - Thursday, April 9
+---
+
+### Week 11
+
+#### Lesson 19 - Tuesday, April 14
 **Spread Spectrum & CDMA**
-- Introduction to spread spectrum concepts
-- Direct Sequence Spread Spectrum (DSSS) fundamentals
-- Frequency Hopping Spread Spectrum (FHSS) overview
-- DSSS processing gain and bandwidth expansion
-- PN sequences and autocorrelation properties
+- Deep dive into DSSS processing gain and interference rejection
+- PN sequences: m-sequences, Gold codes, autocorrelation properties
 - CDMA (Code Division Multiple Access) fundamentals
 - Walsh codes and orthogonality
 - IQ spreading: separate codes for I and Q channels
+- Multi-user CDMA: near-far problem, power control
 - Applications: 3G cellular (CDMA2000, WCDMA), GPS
-- WiFi 802.11b DSSS
-- Jamming resistance and security benefits
+- Comparison: CDMA vs. TDMA vs. FDMA
 - Reading: Supplemental materials
 
 **Lab:** Python Lab 3 - CDMA & Spread Spectrum Simulation
@@ -396,48 +416,35 @@ Reading quizzes administered through Brightspace at the beginning of selected cl
 - Multi-user CDMA with Walsh codes
 - Compare CDMA to TDMA/FDMA
 
----
+#### Lesson 20 - Thursday, April 16
+**M-ary Modulation, QAM, FT8 & W3USR Digital Modes**
+- Extension from binary to M-ary signaling (log₂(M) bits/symbol)
+- QPSK: 4 phase states, 2 bits/symbol, Gray coding
+- Offset QPSK (OQPSK) for satellite links
+- Higher-order PSK: 8-PSK, 16-PSK limitations
+- QAM (Quadrature Amplitude Modulation): vary amplitude and phase
+- 16-QAM, 64-QAM, 256-QAM constellations
+- Spectral efficiency comparison: BPSK through 256-QAM
+- WiFi and LTE adaptive modulation (MCS index)
+- Error Vector Magnitude (EVM): modulation quality metric
+- EVM specifications: WiFi, LTE, 5G NR requirements
+- FT8: 8-FSK weak-signal mode, Costas arrays, LDPC coding
+- Reading: Chapter 7.5-7.7, Supplemental FT8 materials
 
-### Week 11
-
-#### Lesson 19 - Tuesday, April 14
-**M-ary PSK, QAM & LTE/5G Modulation**
-- Extension from binary to M-ary signaling
-- QPSK (Quadrature Phase Shift Keying) - encoding 2 bits using IQ
-- Offset QPSK (OQPSK)
-- M-ary PSK constellations in IQ plane
-- QAM (Quadrature Amplitude Modulation) - independent I and Q amplitude control
-- Spectral efficiency vs. power efficiency tradeoff
-- LTE and 5G modulation schemes: QPSK, 16-QAM, 64-QAM, 256-QAM
-- Adaptive modulation based on channel quality
-- Reading: Chapter 7.5-7.7
+**Lab Activity:** W3USR Activity 2 - Digital Modes Demonstration
+- Observe FT8 operation on HF (20m, 14.074 MHz) using WSJT-X
+- Identify Costas array tones on waterfall display
+- Observe SNR reports (negative dB values common)
+- APRS on 2m VHF (144.390 MHz): 1200 bps AFSK packets
+- Decode position reports, weather data, messages
 
 **Lab:** Python Lab 4 - QPSK/QAM Simulation & EVM Analysis
-- Generate QPSK constellation
-- Simulate QPSK modulation and demodulation
-- Examine eye diagrams for I and Q channels
+- Generate QPSK and QAM constellations
+- Simulate modulation and demodulation
 - Add AWGN and observe constellation spreading
 - Calculate and visualize Error Vector Magnitude (EVM)
-- Increase noise/distortion and watch EVM degrade
-- Observe how degraded constellations lead to demodulation failures
-- Optional: Analyze 64-QAM constellations from captured WiFi/LTE signals
 
-**Additional Topics:**
-- WiFi modulation: 802.11n/ac/ax (up to 1024-QAM in WiFi 6)
-- Spectral efficiency comparison: WiFi vs. cellular
-- Multiple access: OFDMA in WiFi 6 and LTE
-- Error Vector Magnitude (EVM) fundamentals
-- EVM as measure of modulation quality (magnitude + phase error)
-- WiFi and 5G specifications using EVM requirements
-
-**Homework 4 Assigned:** M-ary modulation, QAM, EVM, WiFi/cellular spectral efficiency problems
-
-#### Lesson 20 - Thursday, April 16
-**EXAM 2: Modulation & Digital Systems**
-- Coverage: Chapters 4-7
-- Format: Closed book, equation sheet provided
-
-**Homework 4 Due**
+**Homework 4 Assigned:** M-ary modulation, QAM, EVM, spectral efficiency (due Lesson 22)
 
 ---
 
@@ -446,25 +453,29 @@ Reading quizzes administered through Brightspace at the beginning of selected cl
 ### Week 12
 
 #### Lesson 21 - Tuesday, April 21
-**Exam Review & Probability Introduction**
+**EXAM 2: Modulation & Digital Systems**
+- Coverage: Chapters 4-7, 9 (Lessons 10-20)
+- Topics: FM/PM, FSK, BPSK, noise fundamentals, ISI, OFDM, spread spectrum, QAM, EVM
+- Format: Closed book, equation sheet provided
+- Duration: 75 minutes, 100 points
+
+#### Lesson 22 - Thursday, April 23
+**Exam Review & Introduction to Probability**
 - Exam 2 review and discussion
+- Common errors and corrections
 - Motivation for probability in communications
 - Random experiments and sample spaces
 - Probability axioms
 - Conditional probability and Bayes' theorem
-- Reading: Chapter 8.1-8.2
-
-#### Lesson 22 - Thursday, April 23
-**Probability Fundamentals & Channel Capacity**
 - Independent events
-- Shannon's theorem and channel capacity
-- Relationship between SNR, bandwidth, and capacity
-- Fundamental limits of communication systems
 - Reading: Chapter 8.1-8.2
 
 **📝 READING QUIZ 7**
 - Topic: Probability and Random Variables
+- Reading: Chapter 8.1-8.2
 - Administered via Brightspace at beginning of class
+
+**Homework 4 Due**
 
 **Homework 5 Assigned:** Probability, noise, and SNR (due Lesson 26)
 
@@ -519,7 +530,8 @@ Reading quizzes administered through Brightspace at the beginning of selected cl
 - Noise figure and noise temperature
 
 **📝 READING QUIZ 8**
-- Topic: Noise in Communication Systems
+- Topic: Random Variables, Noise in Analog Communications
+- Reading: Chapter 8.3-8.4, 9
 - Administered via Brightspace at beginning of class
 
 #### Lesson 26 - Thursday, May 7
@@ -554,7 +566,8 @@ Reading quizzes administered through Brightspace at the beginning of selected cl
 - Q&A session
 
 **📝 READING QUIZ 9**
-- Topic: Digital Performance and BER
+- Topic: Digital Performance, BER, System Noise Calculations
+- Reading: Chapter 10, 11.1-11.3
 - Administered via Brightspace at beginning of class
 
 **Lab:** Python Lab 5 - BER Performance Simulation
@@ -576,4 +589,4 @@ Reading quizzes administered through Brightspace at the beginning of selected cl
 
 ---
 
-*Last updated: January 27, 2026*
+*Last updated: January 31, 2026*
