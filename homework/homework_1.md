@@ -135,7 +135,7 @@ $$u(t) = \begin{cases}
 
 **(b)** What is the relationship between the unit step $u(t)$ and the unit impulse $\delta(t)$? (3 points)
 
-**(c)** Compute the convolution $y(t) = x(t) * x(t)$, where $x(t)$ is defined in part (a). Sketch $y(t)$ and label its peak value and support (the interval where $y(t) \neq 0$). (3 points)
+**(c)** Let $x(t) = u(t) - u(t-1)$ and $g(t) = t\,[u(t) - u(t-1)]$. Compute the convolution $y(t) = x(t) * g(t)$. Sketch $y(t)$ and label its peak value and support (the interval where $y(t) \neq 0$). (3 points)
 
 ---
 
