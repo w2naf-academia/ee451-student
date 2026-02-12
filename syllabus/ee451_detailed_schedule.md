@@ -53,7 +53,7 @@ Reading quizzes administered through Brightspace at the beginning of selected cl
 | Lab | Week | Date | Topic |
 |-----|------|------|-------|
 | Python Lab 1 | 2 | Thu, Feb 5 | Fourier Analysis and Spectral Visualization |
-| Python Lab 2 | 3 | Thu, Feb 12 | AM/ASK Modulation and Envelope Detection |
+| Python Lab 2 | 4 | Tue, Feb 17 | AM/ASK Modulation and Envelope Detection |
 | Python Lab 3 | 11 | Tue, Apr 14 | CDMA & Spread Spectrum Simulation |
 | Python Lab 4 | 11 | Thu, Apr 16 | QPSK/QAM Simulation with EVM Analysis |
 | Python Lab 5 | 15 | Tue, May 12 | BER Performance Simulation |
@@ -160,11 +160,6 @@ Reading quizzes administered through Brightspace at the beginning of selected cl
 - Envelope detection
 - Modulation index and overmodulation
 
-**Lab:** Python Lab 2 - AM/ASK Modulation
-- Simulate AM signals with varying modulation depths
-- Implement envelope detection
-- Compare AM spectra at different modulation indices
-
 **Homework 2 Assigned:** AM and ASK problems
 
 ---
@@ -178,6 +173,11 @@ Reading quizzes administered through Brightspace at the beginning of selected cl
 - Spectral characteristics of ASK
 - Comparison of analog AM and digital ASK
 - Reading: Chapter 7.1-7.2, Chapter 3.6-3.8 (in preparation for Reading Quiz 3 in Lesson 7)
+
+**Lab:** Python Lab 2 - AM/ASK Modulation
+- Simulate AM signals with varying modulation depths
+- Implement envelope detection
+- Compare AM spectra at different modulation indices
 
 #### Lesson 7 - Thursday, February 19
 **AM Systems & SSB**

@@ -188,8 +188,8 @@ Class meets Tuesday & Thursday, 2:30–3:45 PM.
 | 3    | Feb 10 | **Amplitude Modulation (Analog + Digital)** | Ch 3.1–3.3, 7.1–7.2 |
 |      |      | AM theory: DSB-SC, envelope detection | |
 |      |      | Binary ASK (On-Off Keying) | |
-|      |      | *Python Lab 2: AM/ASK modulation* | |
 | 4    | Feb 17 | **AM Systems & Receiver Architectures** | Ch 3.6–3.8 |
+|      |      | *Python Lab 2: AM/ASK modulation* | |
 |      |      | SSB modulation, Hilbert transform, VSB | |
 |      |      | Superheterodyne, direct conversion, direct sampling | |
 |      |      | *W3USR: HF station tour, SSB/AM listening* | |
