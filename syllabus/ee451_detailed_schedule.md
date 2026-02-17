@@ -53,7 +53,7 @@ Reading quizzes administered through Brightspace at the beginning of selected cl
 | Lab | Week | Date | Topic |
 |-----|------|------|-------|
 | Python Lab 1 | 2 | Thu, Feb 5 | Fourier Analysis and Spectral Visualization |
-| Python Lab 2 | 4 | Tue, Feb 17 | AM/ASK Modulation and Envelope Detection |
+| Python Lab 2 | 4 | Thu, Feb 19 | AM/ASK Modulation and Envelope Detection |
 | Python Lab 3 | 11 | Tue, Apr 14 | CDMA & Spread Spectrum Simulation |
 | Python Lab 4 | 11 | Thu, Apr 16 | QPSK/QAM Simulation with EVM Analysis |
 | Python Lab 5 | 15 | Tue, May 12 | BER Performance Simulation |
@@ -171,25 +171,28 @@ Reading quizzes administered through Brightspace at the beginning of selected cl
 - On-Off Keying (OOK)
 - Binary ASK as discrete version of AM
 - Spectral characteristics of ASK
+- ASK demodulation (coherent and envelope detection)
+- Superheterodyne receiver and image frequency problem
 - Comparison of analog AM and digital ASK
 - Reading: Chapter 7.1-7.2, Chapter 3.6-3.8 (in preparation for Reading Quiz 3 in Lesson 7)
 
-**Lab:** Python Lab 2 - AM/ASK Modulation
-- Simulate AM signals with varying modulation depths
-- Implement envelope detection
-- Compare AM spectra at different modulation indices
-
 #### Lesson 7 - Thursday, February 19
-**AM Systems & SSB**
-- Single Sideband (SSB) modulation
-- Hilbert transform
-- SSB generation (filter method, phasing method)
-- Vestigial Sideband (VSB) - brief overview
+**SSB Introduction, Python Lab 2, & W3USR Activity 1**
+- SSB motivation: bandwidth and power efficiency vs. DSB
+- SSB key formulas (USB, LSB, Hilbert transform overview)
+- Bandwidth/power comparison: AM vs. DSB-SC vs. SSB
+- Full SSB treatment (derivation, generation methods, VSB, demodulation) continues in Lesson 8
 
 **📝 READING QUIZ 3**
 - Topic: SSB, VSB, Receiver Architectures, ASK/OOK
 - Reading: Chapter 3.6-3.8, 7.1-7.2
 - Administered via Brightspace at beginning of class
+
+**Lab:** Python Lab 2 - AM/ASK Modulation
+- DSB-SC modulation and coherent demodulation
+- Full carrier AM and envelope detection
+- OOK modulation and threshold detection
+- Spectral analysis: AM vs. ASK spectra comparison
 
 **Lab Activity:** W3USR Station Tour & HF Listening
 - Tour of W3USR amateur radio station
