@@ -53,6 +53,8 @@ dependencies:
   - pip:
     - sounddevice
     - soundfile
+    - flask
+    - qrcode
 
   # Optional: GNU Radio (if using radioconda, this is pre-installed)
   # Uncomment if using standard conda and need GNU Radio:
