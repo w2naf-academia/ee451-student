@@ -1,511 +1,177 @@
 # EE 451: Communications Systems
-# Midterm Exam 1 - Study Guide
+# Midterm Exam 1 — Study Guide
 
-**Exam Date:** Week 5 (Thursday, February 26, 2026)
+**Exam Date:** Thursday, February 26, 2026 (L9)
 **Duration:** 75 minutes
 **Coverage:** Chapters 2-3, 7.1-7.2 (Fourier Analysis & Amplitude Modulation)
-**Format:** Closed book, one 8.5" × 11" formula sheet (both sides) allowed
 
 ---
 
-## Overview
+## Exam Format
 
-Midterm 1 focuses on foundational concepts in signal analysis and amplitude modulation. You should be comfortable with:
-- Fourier transform analysis and properties
-- Time-frequency duality and bandwidth concepts
-- AM modulation and demodulation
-- Power calculations in communication systems
-- Binary ASK as digital extension of AM
+This exam has two parts, both completed during the 75-minute class period:
+
+### Part A — Multiple Choice (20 points, ~15 minutes)
+
+- **20 questions** at 1 point each on **Brightspace**
+- Covers conceptual knowledge from the L02, L04, and L07 reading quizzes
+- Questions are drawn randomly from the same pool as the **Practice Quiz** (see below)
+- Complete Part A first, then close your laptop and begin Part B
+
+### Part B — Open-Ended Problems (80 points, ~55 minutes)
+
+- **4 problems** at 20 points each on **paper**
+- **Closed book, closed notes** — a formula sheet is provided
+- Show all work for full credit
+- Problems parallel Homework 1 and Homework 2
+- You may use a scientific calculator
 
 ---
 
-## Topic 1: Fourier Transform Fundamentals
+## Practice Quiz (Available Now on Brightspace)
 
-### Key Concepts
+A **Practice Quiz** is available on Brightspace containing all 102 questions from the exam MC pool. This is the same pool that Part A draws from.
 
-**1. Rectangular Pulse and Sinc Function**
-- Rectangular pulse in time → Sinc function in frequency
-- Time-frequency duality: Narrow pulse → Wide spectrum
-- First zero crossing determines bandwidth
+- **Unlimited attempts** — take it as many times as you want
+- **Your highest score counts as a homework grade**
+- Questions cover Fourier transforms, AM, SSB/VSB, receivers, and ASK/OOK
+- The best way to prepare for Part A is to take the practice quiz until you can consistently score well
 
-**2. Bandwidth Definition**
-- Null-to-null bandwidth: Distance between first zeros
-- 3-dB bandwidth: Half-power points
-- Relationship: $B_{3dB} \approx 0.88 \times B_{null}$
+---
 
-**3. Signal Energy**
-- Time domain: $E = \int_{-\infty}^{\infty} |x(t)|^2 \, dt$
-- Use Parseval's theorem to verify in frequency domain
+## What to Study
 
-### Essential Formulas
+### For Part A (Multiple Choice)
+
+The MC questions test conceptual understanding and quick recall. Focus on:
+
+**From L02 Reading (Ch 2.1-2.5):**
+- Fourier transform definitions and properties
+- Time-frequency duality
+- Dirac delta function properties
+- Energy vs. power signals
+- Parseval's theorem
+
+**From L04 Reading (Ch 3.1-3.3):**
+- DSB-SC modulation: signal expression, spectrum, bandwidth
+- Full carrier AM: modulation index, overmodulation
+- Envelope detection requirements
+- Power distribution in AM signals
+
+**From L07 Reading (Ch 3.6-3.8, 7.1-7.2):**
+- SSB motivation and bandwidth savings
+- SSB generation methods (filter, phasing)
+- VSB as a compromise between DSB and SSB
+- Superheterodyne receiver architecture
+- Image frequency and its mitigation
+- ASK/OOK fundamentals
+
+**Preparation strategy:** Take the practice quiz on Brightspace repeatedly. Review any questions you get wrong.
+
+### For Part B (Open-Ended Problems)
+
+The open-ended problems test your ability to set up and solve calculations. Problems are similar in style to your homework assignments. You should be comfortable with the following topics:
+
+**Fourier Analysis & Signal Energy**
+- Computing Fourier transforms (especially rect/sinc pairs)
+- Bandwidth calculations (first null, null-to-null)
+- Signal energy in time and frequency domains
+- Parseval's theorem
+- Time-frequency duality
+
+**Amplitude Modulation (Full AM)**
+- Identifying AM signal parameters ($A_c$, $m(t)$, $f_c$, $\mu$)
+- Overmodulation conditions
+- Power calculations (carrier, sideband, total)
+- Power efficiency
+- Spectrum sketching
+
+**DSB-SC and SSB**
+- DSB-SC signal expressions and trig identity expansion
+- Sideband frequencies and RF bandwidth
+- Power calculations
+- SSB bandwidth and frequency components
+- Comparing modulation schemes (bandwidth, power, efficiency)
+
+**ASK/OOK and Receivers**
+- OOK signal parameters (bit duration, expression, bandwidth)
+- Waveform sketching
+- Superheterodyne receiver calculations (LO frequency, image frequency)
+- Image rejection and IF trade-offs
+
+**Preparation strategy:** Redo Homework 1 and Homework 2 problems from scratch. If you can solve the homework without looking at solutions, you are well-prepared for Part B.
+
+---
+
+## Essential Formulas
+
+A formula sheet is provided with the exam. It includes Fourier transform pairs, properties, trig identities, and AM formulas. You do not need to memorize these. However, you should know **how to use** each formula — practice applying them on homework problems.
+
+### Key formulas to be comfortable with
 
 ```
-Fourier Transform Pair:
+Fourier Transform:
   rect(t/T) ↔ T·sinc(fT)
+  sinc(x) = sin(πx)/(πx), first zero at x = ±1
 
-Sinc Function:
-  sinc(x) = sin(πx)/(πx)
-  First zero at x = ±1
-
-Rectangular Pulse:
-  x(t) = A·rect(t/T)
-  X(f) = AT·sinc(fT)
-  First zero at f = ±1/T
-
-Energy:
-  E = ∫|x(t)|² dt = A²T (for rectangular pulse)
-```
-
-### Practice Problems
-
-From **Homework 1:**
-- Problem 1: Rectangular pulse Fourier transform
-- Problem 2: Sinc function properties
-- Problem 3: Energy calculations
-
-**Strategy:**
-- Draw time and frequency domain sketches
-- Identify key parameters: amplitude, duration, bandwidth
-- Check units (time ↔ frequency reciprocity)
-
----
-
-## Topic 2: Fourier Transform Properties
-
-### Key Concepts
-
-**1. Time-Shift Property**
-- Delay in time → Phase shift in frequency
-- Magnitude spectrum unchanged
-- $x(t - t_0) \leftrightarrow X(f)e^{-j2\pi f t_0}$
-
-**2. Modulation Property (Critical for AM!)**
-- Multiplication by cosine → Frequency translation
-- $x(t)\cos(2\pi f_c t) \leftrightarrow \frac{1}{2}[X(f-f_c) + X(f+f_c)]$
-- Creates upper and lower sidebands
-
-**3. Bandwidth in Modulated Signals**
-- DSB-SC bandwidth = $2B$ (where B is message bandwidth)
-- Spectrum centered at ±$f_c$
-
-### Essential Formulas
-
-```
-Time-Shift:
-  x(t - t₀) ↔ X(f)e^(-j2πft₀)
-
-Modulation (DSB-SC):
+Modulation Property:
   x(t)cos(2πfₑt) ↔ ½[X(f - fₑ) + X(f + fₑ)]
 
-Bandwidth:
-  Message bandwidth: B
-  DSB-SC bandwidth: 2B
-  AM bandwidth: 2B
-  SSB bandwidth: B
-```
-
-### Practice Problems
-
-From **Homework 1:**
-- Problem 4: Modulation property
-- Problem 5: DSB-SC spectrum sketching
-
-**Strategy:**
-- Always sketch BOTH time and frequency domains
-- Label carrier frequency $f_c$ and sidebands clearly
-- Remember: modulation creates TWO copies (at ±$f_c$)
-
----
-
-## Topic 3: Parseval's Theorem
-
-### Key Concepts
-
-**1. Energy Conservation**
-- Energy in time = Energy in frequency
-- Useful for verifying calculations
-- Different domains, same physical quantity
-
-**2. Application**
-- Calculate energy in whichever domain is easier
-- Time domain for simple pulses
-- Frequency domain for sinc functions
-
-### Essential Formulas
-
-```
 Parseval's Theorem:
-  ∫|x(t)|² dt = ∫|X(f)|² df
+  E = ∫|x(t)|² dt = ∫|X(f)|² df
 
-For exponential decay x(t) = Ae^(-at)u(t):
-  E = A²/(2a)
-```
-
-### Practice Problems
-
-From **Homework 1:**
-- Problem 6: Verify energy using both domains
-
-**Strategy:**
-- Calculate in time domain first (usually easier)
-- Use Parseval to verify in frequency domain
-- Check units: energy has units of V²·s or J
-
----
-
-## Topic 4: Amplitude Modulation (AM)
-
-### Key Concepts
-
-**1. AM Signal Structure**
-- $s(t) = A_c[1 + \mu m_n(t)]\cos(2\pi f_c t)$
-- Carrier amplitude: $A_c$
-- Modulation index: $\mu = A_m/A_c$
-- Normalized message: $|m_n(t)| \leq 1$
-
-**2. Modulation Index**
-- $\mu < 1$: Normal modulation
-- $\mu = 1$: 100% modulation
-- $\mu > 1$: Overmodulation (envelope distortion!)
-
-**3. Power Distribution**
-- Carrier power: Constant, carries NO information
-- Sideband power: Varies with $\mu$, contains information
-- Efficiency: Low for small $\mu$
-
-### Essential Formulas
-
-```
-AM Signal:
-  s(t) = Aₑ[1 + μ·cos(2πfₘt)]cos(2πfₑt)
-  Aₑ = carrier amplitude
-  μ = modulation index = Aₘ/Aₑ
-
-Total Power:
-  P_total = (Aₑ²/2R)(1 + μ²/2)
-
-Carrier Power:
-  P_carrier = Aₑ²/(2R)
-
-Sideband Power:
-  P_sideband = (Aₑ²/2R)(μ²/2)
-
-Efficiency:
-  η = P_sideband/P_total = μ²/(2 + μ²)
+AM Signal & Power:
+  s(t) = Aₑ[1 + μ·mₙ(t)]cos(2πfₑt)
+  P_total = (Aₑ²/2R)(1 + μ²/2)    [single tone]
+  η = μ²/(2 + μ²)                  [single tone]
 
 Bandwidth:
-  B_AM = 2fₘ (same as DSB-SC)
+  DSB-SC / AM: 2B
+  SSB: B
+  ASK: 2Rb
+
+Superheterodyne (high-side injection):
+  f_LO = f_RF + f_IF
+  f_image = f_RF + 2·f_IF
 ```
-
-### Common Mistakes to Avoid
-
-❌ Using $A_c + A_m$ instead of $A_c(1 + \mu)$
-❌ Forgetting factor of 1/2 in power formulas (RMS!)
-❌ Confusing $\mu$ with $m(t)$
-❌ Not checking for overmodulation ($\mu > 1$)
-
-### Practice Problems
-
-From **Homework 2:**
-- Problem 1: Basic AM analysis
-- Problem 2: Power calculations
-- Problem 3: Modulation index and efficiency
-- Problem 4: Overmodulation detection
-
-**Strategy:**
-1. Identify $A_c$, $A_m$, $f_c$, $f_m$ from equation
-2. Calculate $\mu = A_m/A_c$
-3. Check if $\mu \leq 1$ (overmodulated?)
-4. Use power formulas (don't forget the R!)
-5. Calculate efficiency as percentage
 
 ---
 
-## Topic 5: DSB-SC vs. Full AM
+## Time Management (75 minutes)
 
-### Key Concepts
-
-**1. DSB-SC (Double Sideband Suppressed Carrier)**
-- $s(t) = A_c m(t)\cos(2\pi f_c t)$
-- No carrier component → more efficient
-- Requires coherent detection (complex receiver)
-
-**2. Comparison Table**
-
-| Feature | DSB-SC | Full AM |
-|---------|---------|---------|
-| Carrier | Suppressed | Transmitted |
-| Power efficiency | 100% in sidebands | $\mu^2/(2+\mu^2)$ |
-| Detection | Coherent required | Envelope detector |
-| Bandwidth | 2B | 2B |
-| Complexity | High (receiver) | Low (receiver) |
-
-**3. When to Use**
-- DSB-SC: Power-limited systems, don't mind receiver complexity
-- AM: Simple receivers (AM radio), power not critical
-
-### Essential Formulas
-
-```
-DSB-SC Signal:
-  s(t) = Aₑ·m(t)·cos(2πfₑt)
-
-DSB-SC Power:
-  P_DSB = (Aₑ²/2R)·P_m
-  where P_m = mean square of m(t)
-
-For sinusoidal m(t) = Aₘcos(2πfₘt):
-  P_DSB = Aₑ²Aₘ²/(4R)
-
-Comparison:
-  P_DSB_sideband = P_AM_sideband (same sidebands)
-  But P_AM_total = P_AM_sideband + P_carrier
-```
-
-### Practice Problems
-
-From **Homework 2:**
-- Problem 5: DSB-SC power calculation
-- Problem 6: Efficiency comparison
-
-**Strategy:**
-- For DSB-SC: All power is in sidebands
-- For AM: Must calculate carrier + sideband power
-- Compare efficiencies as percentages
+| Phase | Time | What to Do |
+|-------|------|------------|
+| Part A: Multiple Choice | ~15 min | Answer 20 MC questions on Brightspace |
+| Problem 1: Fourier | ~12 min | FT, bandwidth, energy, Parseval's |
+| Problem 2: AM Power | ~14 min | Parameters, overmodulation, power, efficiency, spectrum |
+| Problem 3: DSB-SC/SSB | ~14 min | Trig expansion, sidebands, power, comparison table |
+| Problem 4: ASK/Superhet | ~15 min | OOK waveform, bandwidth, receiver frequencies, Q trade-off |
+| Review | ~5 min | Check answers, verify units |
+| **Total** | **75 min** | |
 
 ---
 
-## Topic 6: Single Sideband (SSB)
-
-### Key Concepts
-
-**1. Motivation**
-- DSB-SC wastes bandwidth (redundant sidebands)
-- SSB transmits only one sideband
-- Half the bandwidth of DSB-SC or AM!
-
-**2. Bandwidth Efficiency**
-- Message bandwidth: B
-- AM/DSB-SC bandwidth: 2B
-- SSB bandwidth: B (50% savings!)
-
-**3. Generation Methods**
-- **Filter method:** Generate DSB-SC, then filter
-- **Phasing method:** Use Hilbert transform (90° phase shift)
-
-**4. Applications**
-- Amateur radio (voice communications)
-- Telephone systems (frequency division multiplexing)
-- Anywhere bandwidth is precious
-
-### Essential Formulas
-
-```
-Bandwidth Comparison:
-  Message: B (e.g., 3 kHz for voice)
-  DSB-SC: 2B = 6 kHz
-  SSB: B = 3 kHz
-  AM: 2B = 6 kHz
-
-Power:
-  P_SSB = ½ P_DSB (only one sideband)
-```
-
-### Practice Problems
-
-From **Homework 2:**
-- Problem 7: Bandwidth calculations
-- Problem 8: SSB generation methods
-
-**Strategy:**
-- Identify message bandwidth B
-- SSB always uses exactly B (one sideband)
-- AM and DSB-SC use 2B (two sidebands)
-
----
-
-## Topic 7: Binary ASK (Amplitude Shift Keying)
-
-### Key Concepts
-
-**1. ASK as Digital AM**
-- Bit "0" → Low amplitude (often 0)
-- Bit "1" → High amplitude
-- On-Off Keying (OOK): Special case where "0" = 0V
-
-**2. Bit Duration and Bandwidth**
-- Bit rate: $R_b$ bits/s
-- Bit duration: $T_b = 1/R_b$
-- Null-to-null bandwidth: $B \approx 2R_b$
-
-**3. Relationship to AM**
-- ASK is AM with digital message signal
-- Rectangular pulses → sinc spectrum
-- Bandwidth determined by bit rate, not carrier frequency
-
-### Essential Formulas
-
-```
-ASK Parameters:
-  Bit rate: Rᵦ (bits/s)
-  Bit duration: Tᵦ = 1/Rᵦ
-  Null-to-null BW: B ≈ 2/Tᵦ = 2Rᵦ
-
-On-Off Keying (OOK):
-  s₀(t) = 0              (bit "0")
-  s₁(t) = A·cos(2πfₑt)   (bit "1")
-
-Carson's Rule (estimate):
-  B_ASK ≈ 2Rᵦ
-```
-
-### Practice Problems
-
-From **Homework 2:**
-- Problem 9: ASK bandwidth calculations
-- Problem 10: Bit rate vs. bandwidth
-
-**Strategy:**
-1. Find bit duration $T_b = 1/R_b$
-2. Null-to-null BW = $2/T_b = 2R_b$
-3. Compare to carrier frequency ($B \ll f_c$ for RF)
-
----
-
-## Formula Sheet Recommendations
-
-### Must-Have Formulas
+## Common Mistakes to Avoid
 
 **Fourier Transform:**
-```
-rect(t/T) ↔ T·sinc(fT)
-x(t - t₀) ↔ X(f)e^(-j2πft₀)
-x(t)cos(2πfₑt) ↔ ½[X(f-fₑ) + X(f+fₑ)]
-```
+- Forgetting the factor of $T$ in $X(f) = AT\,\text{sinc}(fT)$
+- Confusing first null ($1/T$) with null-to-null bandwidth ($2/T$)
+- Mixing up energy signals vs. power signals
 
-**AM:**
-```
-s(t) = Aₑ[1 + μmₙ(t)]cos(2πfₑt)
-μ = Aₘ/Aₑ
-P_total = (Aₑ²/2R)(1 + μ²/2)
-η = μ²/(2 + μ²)
-```
+**AM Power:**
+- Forgetting the factor of $1/2$ in power: $P = A^2/(2R)$ for a sinusoid
+- Not checking for overmodulation before calculating power
+- Confusing $\mu$ (modulation index) with $m(t)$ (message signal)
+- Forgetting to include resistance $R$ in power calculations
 
-**DSB-SC:**
-```
-s(t) = Aₑm(t)cos(2πfₑt)
-P_DSB = (Aₑ²/2R)·P_m
-```
+**DSB-SC / SSB:**
+- Forgetting the $1/2$ factor from the trig identity $\cos A \cos B = \frac{1}{2}[\cos(A-B) + \cos(A+B)]$
+- SSB bandwidth is $B$, not $2B$
 
-**Bandwidth:**
-```
-B_AM = B_DSB = 2B
-B_SSB = B
-B_ASK ≈ 2Rᵦ
-```
-
-**Energy/Power:**
-```
-Parseval: ∫|x(t)|² dt = ∫|X(f)|² df
-P_avg = V²_rms/R = V²_peak/(2R) for sinusoid
-```
-
-### Useful Constants
-
-```
-Room temperature: T = 290 K
-Boltzmann constant: k = 1.38 × 10⁻²³ J/K (probably not needed for Midterm 1)
-```
-
----
-
-## Exam Strategy
-
-### Time Management (75 minutes total)
-
-- **4 min:** Read entire exam, mark easy problems
-- **8 min:** Problem 1 (Fourier fundamentals - typically straightforward)
-- **8 min:** Problem 2 (Fourier properties)
-- **8 min:** Problem 3 (Parseval's theorem)
-- **17 min:** Problem 4 (AM analysis - usually longest)
-- **8 min:** Problem 5 (DSB-SC comparison)
-- **10 min:** Problem 6 (SSB and bandwidth)
-- **8 min:** Problem 7 (ASK bonus - if time permits)
-- **4 min:** Review and check answers
-
-### Problem-Solving Approach
-
-**For Fourier Transform Problems:**
-1. Identify signal type (rect, sinc, exponential)
-2. Draw time domain
-3. Apply transform pair or properties
-4. Draw frequency domain with labels
-5. Calculate bandwidth from first zero crossing
-
-**For AM Power Problems:**
-1. Write out given signal equation
-2. Identify $A_c$, $A_m$, $f_c$, $f_m$
-3. Calculate $\mu = A_m/A_c$
-4. **Check for overmodulation** ($\mu > 1$?)
-5. Calculate carrier power: $P_c = A_c^2/(2R)$
-6. Calculate total power: $P_{tot} = P_c(1 + \mu^2/2)$
-7. Calculate sideband power: $P_{sb} = P_c(\mu^2/2)$
-8. Efficiency: $\eta = P_{sb}/P_{tot}$
-
-**For Bandwidth Problems:**
-1. Identify message bandwidth B or frequency $f_m$
-2. Choose correct formula:
-   - AM/DSB-SC: 2B
-   - SSB: B
-   - ASK: $2R_b$
-3. Label spectrum sketch clearly
-
-### Common Mistakes to Avoid
-
-❌ **Forgetting the factor of 1/2** in power formulas (sinusoid RMS = peak/√2)
-❌ **Mixing up time and frequency domains** (check units!)
-❌ **Not checking for overmodulation** before calculating AM power
-❌ **Confusing bandwidth with carrier frequency**
-❌ **Using wrong sideband formula** for SSB (B, not 2B)
-❌ **Forgetting to include resistance R** in power calculations
-❌ **Not showing units** in final answers
-
-### Tips for Success
-
-✅ **Draw diagrams!** Time and frequency sketches help visualize
-✅ **Write out formulas** before substituting numbers
-✅ **Check dimensions** (frequency in Hz, power in W, etc.)
-✅ **Show all work** - partial credit is generous
-✅ **Box final answers** - makes grading easier
-✅ **Use your formula sheet** - don't waste time memorizing
-✅ **Sanity check** - Does $\mu > 1$? Is power positive? Is BW < $f_c$?
-
----
-
-## Practice Resources
-
-### Homework Problems (Strongly Recommended)
-
-**Homework 1 (Fourier Analysis):**
-- All problems 1-10
-- Focus on: Problems 1, 4, 5, 6 (most exam-relevant)
-
-**Homework 2 (AM):**
-- All problems 1-10
-- Focus on: Problems 1, 2, 3, 4, 8 (core AM concepts)
-
-### Lecture Notebooks
-
-- **Lecture 2:** Fourier Transform fundamentals
-- **Lecture 3:** Fourier properties and bandwidth
-- **Lecture 5:** AM modulation and demodulation
-
-### Textbook Sections
-
-- **Chapter 2.1:** Fourier Transform
-- **Chapter 2.2-2.3:** Filtering and bandwidth
-- **Chapter 3:** Amplitude Modulation
-- **Chapter 7.1-7.2:** ASK (digital AM)
+**ASK / Superheterodyne:**
+- Confusing baseband bandwidth ($R_b$) with null-to-null RF bandwidth ($2R_b$)
+- Sign errors in image frequency calculation
+- Confusing the RF preselector filter (rejects image) with the IF filter (selects channel)
 
 ---
 
@@ -513,58 +179,66 @@ Boltzmann constant: k = 1.38 × 10⁻²³ J/K (probably not needed for Midterm 1
 
 Before the exam, make sure you can:
 
-**Fourier Transform:**
-- [ ] Calculate Fourier transform of rectangular pulse
-- [ ] Identify first zero crossing and bandwidth
-- [ ] Apply time-shift property
-- [ ] Apply modulation property (create sidebands)
-- [ ] Sketch magnitude spectrum with labeled axes
+**Fourier Analysis:**
+- [ ] Compute FT of rectangular pulse and identify sinc parameters
+- [ ] Find first null and null-to-null bandwidth
 - [ ] Calculate signal energy in time domain
 - [ ] Verify energy using Parseval's theorem
+- [ ] Explain time-frequency duality
 
 **Amplitude Modulation:**
-- [ ] Identify $A_c$, $A_m$, $f_c$, $f_m$ from AM equation
-- [ ] Calculate modulation index $\mu$
-- [ ] Detect overmodulation ($\mu > 1$)
-- [ ] Calculate carrier power
-- [ ] Calculate total transmitted power
-- [ ] Calculate sideband power
-- [ ] Calculate power efficiency
-- [ ] Determine bandwidth (always 2B for AM)
+- [ ] Extract $A_c$, $A_m$, $f_c$, $f_m$, $\mu$ from an AM equation
+- [ ] Check for overmodulation ($\mu > 1$?)
+- [ ] Calculate carrier, sideband, and total power
+- [ ] Calculate efficiency $\eta$
+- [ ] Sketch magnitude spectrum with labeled components
 
-**DSB-SC:**
-- [ ] Write DSB-SC signal equation
-- [ ] Calculate transmitted power
-- [ ] Compare efficiency to full AM
-- [ ] Explain advantage (power) vs. disadvantage (receiver complexity)
+**DSB-SC and SSB:**
+- [ ] Write DSB-SC expression and expand with trig identity
+- [ ] Identify USB and LSB frequency components
+- [ ] Calculate DSB-SC power (sum of component powers)
+- [ ] Determine SSB-USB components and bandwidth
+- [ ] Compare DSB-SC, SSB, and AM (bandwidth, power, efficiency)
 
-**SSB:**
-- [ ] Calculate bandwidth (always B, not 2B!)
-- [ ] Explain bandwidth advantage
-- [ ] Describe filter method or phasing method
-- [ ] List applications (amateur radio, telephony)
-
-**ASK:**
-- [ ] Relate bit rate to bandwidth
-- [ ] Calculate null-to-null bandwidth ($2R_b$)
-- [ ] Explain relationship to AM
+**ASK and Superheterodyne:**
+- [ ] Calculate bit duration and null-to-null bandwidth for OOK
+- [ ] Sketch OOK waveform from a bit sequence
+- [ ] Calculate LO frequency and image frequency
+- [ ] Explain the image problem and preselector mitigation
+- [ ] Explain why higher IF helps image rejection but hurts channel selectivity
 
 ---
 
-## Final Thoughts
+## Study Resources
 
-**This exam tests fundamentals!** If you understand:
-1. Fourier transforms create sidebands when you multiply by a carrier
-2. AM puts information in sidebands while wasting power in carrier
-3. Bandwidth = 2 × (message bandwidth) for AM/DSB-SC
-4. Power = $V^2/(2R)$ for sinusoids
+### Homework (Most Important!)
 
-...you'll do well!
+- **Homework 1:** Problems 3, 6, 7 (Euler's formula, signal energy, power signals)
+- **Homework 2:** Problems 1-3, 5-7, 9 (DSB-SC, AM power, bandwidth, OOK, superheterodyne)
+- Redo these problems from scratch — don't just re-read solutions
 
-**Focus your study time on:**
-- Homework 1 & 2 problems (they mirror exam problems)
-- Drawing accurate spectrum diagrams
-- AM power calculations (most common exam mistakes here)
-- Checking for overmodulation
+### Practice Quiz
 
-**Good luck! 📡**
+- Available on Brightspace — take it multiple times
+- Covers all MC topics; highest score counts as homework
+
+### Lecture Notebooks
+
+- **L01:** Complex numbers and phasors
+- **L02:** Signal analysis, energy/power, I/Q representation
+- **L03:** Fourier analysis, rect/sinc, bandwidth
+- **L04:** Parseval's theorem, spectral density
+- **L05:** AM modulation, DSB-SC, envelope detection
+- **L06:** ASK/OOK, spectral analysis, superheterodyne
+- **L07:** SSB, Hilbert transform, VSB
+
+### Textbook
+
+- Chapter 2.1-2.5: Fourier Transform and properties
+- Chapter 3.1-3.3: AM, DSB-SC
+- Chapter 3.6-3.8: SSB, VSB
+- Chapter 7.1-7.2: ASK, OOK
+
+---
+
+**Good luck!**
