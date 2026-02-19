@@ -122,8 +122,9 @@ Parseval's Theorem:
 
 AM Signal & Power:
   s(t) = Aₑ[1 + μ·mₙ(t)]cos(2πfₑt)
-  P_total = (Aₑ²/2R)(1 + μ²/2)    [single tone]
-  η = μ²/(2 + μ²)                  [single tone]
+  P_total = (Aₑ²/2R)(1 + μ²⟨mₙ²⟩)  [general]
+  P_total = (Aₑ²/2R)(1 + μ²/2)      [single tone, since ⟨cos²⟩ = ½]
+  η = μ²⟨mₙ²⟩ / (1 + μ²⟨mₙ²⟩)
 
 Bandwidth:
   DSB-SC / AM: 2B
@@ -214,7 +215,8 @@ Before the exam, make sure you can:
 ### Homework (Most Important!)
 
 - **Homework 1:** Problems 3, 6, 7 (Euler's formula, signal energy, power signals)
-- **Homework 2:** Problems 1-3, 5-7, 9 (DSB-SC, AM power, bandwidth, OOK, superheterodyne)
+- **Homework 2:** Problems 1-3, 5-7, 9-10 (DSB-SC, AM power, bandwidth, OOK, superheterodyne, AM system design)
+- **Homework 2 Bonus 1:** SSB bandwidth and power (extra credit on HW, but good exam practice)
 - Redo these problems from scratch — don't just re-read solutions
 
 ### Practice Quiz
