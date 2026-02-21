@@ -162,7 +162,7 @@ You may complete Part A and Part B in any order. Here are suggested time targets
 ## Common Mistakes to Avoid
 
 **Fourier Transform:**
-- Forgetting the factor of $T$ in $X(f) = AT\,\text{sinc}(fT)$
+- Forgetting the amplitude scaling: $X(f) = AT \cdot \text{sinc}(fT)$, not just $\text{sinc}(fT)$
 - Confusing first null ($1/T$) with null-to-null bandwidth ($2/T$)
 - Misreading $|t| \leq \tau/2$ as meaning $T = \tau/2$ instead of $T = \tau$
 
