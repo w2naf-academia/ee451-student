@@ -16,12 +16,13 @@ This exam has two parts, both completed during the 75-minute class period:
 - **20 questions** at 1 point each on **Brightspace**
 - Covers conceptual knowledge from the L02, L04, and L07 reading quizzes
 - Questions are drawn randomly from the same pool as the **Practice Quiz** (see below)
-- Complete Part A first, then close your laptop and begin Part B
+- You may complete Part A and Part B in any order
 
 ### Part B — Open-Ended Problems (80 points, ~55 minutes)
 
-- **4 problems** at 20 points each on **paper**
+- **5 problems** at 16 points each on **paper**
 - **Closed book, closed notes** — a formula sheet is provided
+- You may annotate the formula sheet with your own notes (no worked problems)
 - Show all work for full credit
 - Problems parallel Homework 1 and Homework 2
 - You may use a scientific calculator
@@ -75,8 +76,7 @@ The open-ended problems test your ability to set up and solve calculations. Prob
 **Fourier Analysis & Signal Energy**
 - Computing Fourier transforms (especially rect/sinc pairs)
 - Bandwidth calculations (first null, null-to-null)
-- Signal energy in time and frequency domains
-- Parseval's theorem
+- Signal energy in the time domain
 - Time-frequency duality
 
 **Amplitude Modulation (Full AM)**
@@ -84,20 +84,22 @@ The open-ended problems test your ability to set up and solve calculations. Prob
 - Overmodulation conditions
 - Power calculations (carrier, sideband, total)
 - Power efficiency
-- Spectrum sketching
 
 **DSB-SC and SSB**
 - DSB-SC signal expressions and trig identity expansion
 - Sideband frequencies and RF bandwidth
 - Power calculations
 - SSB bandwidth and frequency components
-- Comparing modulation schemes (bandwidth, power, efficiency)
 
-**ASK/OOK and Receivers**
+**On-Off Keying (OOK)**
 - OOK signal parameters (bit duration, expression, bandwidth)
+- Bandwidth comparison with analog AM
 - Waveform sketching
-- Superheterodyne receiver calculations (LO frequency, image frequency)
-- Image rejection and IF trade-offs
+
+**Superheterodyne Receivers**
+- LO frequency and image frequency calculations
+- Image rejection and mitigation strategies
+- IF trade-offs (image rejection vs. channel selectivity)
 
 **Preparation strategy:** Redo Homework 1 and Homework 2 problems from scratch. If you can solve the homework without looking at solutions, you are well-prepared for Part B.
 
@@ -105,7 +107,9 @@ The open-ended problems test your ability to set up and solve calculations. Prob
 
 ## Essential Formulas
 
-A formula sheet is provided with the exam. It includes Fourier transform pairs, properties, trig identities, and AM formulas. You do not need to memorize these. However, you should know **how to use** each formula — practice applying them on homework problems.
+A formula sheet is provided with the exam and distributed ahead of time via the student GitHub repo. It includes Fourier transform pairs, properties, trig identities, and AM formulas. You do not need to memorize these. However, you should know **how to use** each formula — practice applying them on homework problems.
+
+**You may annotate the formula sheet** with your own notes, definitions, or reminders. However, **worked problems are not allowed** — formula sheets containing worked problems will be replaced with a clean copy at the start of the exam.
 
 ### Key formulas to be comfortable with
 
@@ -140,14 +144,17 @@ Superheterodyne (high-side injection):
 
 ## Time Management (75 minutes)
 
+You may complete Part A and Part B in any order. Here are suggested time targets:
+
 | Phase | Time | What to Do |
 |-------|------|------------|
 | Part A: Multiple Choice | ~15 min | Answer 20 MC questions on Brightspace |
-| Problem 1: Fourier | ~12 min | FT, bandwidth, energy, Parseval's |
-| Problem 2: AM Power | ~14 min | Parameters, overmodulation, power, efficiency, spectrum |
-| Problem 3: DSB-SC/SSB | ~14 min | Trig expansion, sidebands, power, comparison table |
-| Problem 4: ASK/Superhet | ~15 min | OOK waveform, bandwidth, receiver frequencies, Q trade-off |
-| Review | ~5 min | Check answers, verify units |
+| Problem 1: Fourier | ~10 min | FT, bandwidth, energy, duality |
+| Problem 2: AM Power | ~10 min | Parameters, overmodulation, power, efficiency |
+| Problem 3: DSB-SC/SSB | ~10 min | Trig expansion, sidebands, power, SSB |
+| Problem 4: OOK | ~10 min | Bit duration, bandwidth, waveform sketch |
+| Problem 5: Superheterodyne | ~10 min | LO/image frequencies, mitigation, IF trade-off |
+| Review | ~10 min | Check answers, verify units |
 | **Total** | **75 min** | |
 
 ---
@@ -157,7 +164,7 @@ Superheterodyne (high-side injection):
 **Fourier Transform:**
 - Forgetting the factor of $T$ in $X(f) = AT\,\text{sinc}(fT)$
 - Confusing first null ($1/T$) with null-to-null bandwidth ($2/T$)
-- Mixing up energy signals vs. power signals
+- Misreading $|t| \leq \tau/2$ as meaning $T = \tau/2$ instead of $T = \tau$
 
 **AM Power:**
 - Forgetting the factor of $1/2$ in power: $P = A^2/(2R)$ for a sinusoid
@@ -169,8 +176,10 @@ Superheterodyne (high-side injection):
 - Forgetting the $1/2$ factor from the trig identity $\cos A \cos B = \frac{1}{2}[\cos(A-B) + \cos(A+B)]$
 - SSB bandwidth is $B$, not $2B$
 
-**ASK / Superheterodyne:**
+**OOK:**
 - Confusing baseband bandwidth ($R_b$) with null-to-null RF bandwidth ($2R_b$)
+
+**Superheterodyne:**
 - Sign errors in image frequency calculation
 - Confusing the RF preselector filter (rejects image) with the IF filter (selects channel)
 
@@ -184,7 +193,6 @@ Before the exam, make sure you can:
 - [ ] Compute FT of rectangular pulse and identify sinc parameters
 - [ ] Find first null and null-to-null bandwidth
 - [ ] Calculate signal energy in time domain
-- [ ] Verify energy using Parseval's theorem
 - [ ] Explain time-frequency duality
 
 **Amplitude Modulation:**
@@ -192,18 +200,19 @@ Before the exam, make sure you can:
 - [ ] Check for overmodulation ($\mu > 1$?)
 - [ ] Calculate carrier, sideband, and total power
 - [ ] Calculate efficiency $\eta$
-- [ ] Sketch magnitude spectrum with labeled components
 
 **DSB-SC and SSB:**
 - [ ] Write DSB-SC expression and expand with trig identity
 - [ ] Identify USB and LSB frequency components
 - [ ] Calculate DSB-SC power (sum of component powers)
 - [ ] Determine SSB-USB components and bandwidth
-- [ ] Compare DSB-SC, SSB, and AM (bandwidth, power, efficiency)
 
-**ASK and Superheterodyne:**
+**On-Off Keying:**
 - [ ] Calculate bit duration and null-to-null bandwidth for OOK
+- [ ] Compare OOK bandwidth with analog AM bandwidth
 - [ ] Sketch OOK waveform from a bit sequence
+
+**Superheterodyne Receiver:**
 - [ ] Calculate LO frequency and image frequency
 - [ ] Explain the image problem and preselector mitigation
 - [ ] Explain why higher IF helps image rejection but hurts channel selectivity
