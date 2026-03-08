@@ -172,7 +172,7 @@ Class meets Tuesday & Thursday, 2:30–3:45 PM.
 
 | Week | Date | Topics | Textbook |
 |------|------|--------|----------|
-| 1    | Jan 27 | **Course intro, prerequisites review** | Ch 1–2.1 |
+| 1    | Jan 29 | **Course intro, prerequisites review** | Ch 1–2.1 |
 |      |      | Complex numbers, Euler's formula, I/Q representation | |
 |      |      | Sinusoids, phasors, convolution, unit step/impulse | |
 |      |      | *Python/Jupyter setup* | |
@@ -193,56 +193,52 @@ Class meets Tuesday & Thursday, 2:30–3:45 PM.
 |      |      | SSB motivation, key formulas, bandwidth/power comparison | |
 |      |      | *Python Lab 2: AM/ASK modulation* | |
 |      |      | *W3USR: HF station tour, SSB/AM listening* | |
-| 5    | Feb 24 | **EXAM 1** / Angle Modulation Intro | Ch 2–3, 7.1–7.2 |
+| 5    | Feb 24 | **Exam 1 Review & EXAM 1** | Ch 2–3, 7.1–7.2 |
 | 6    | Mar 3 | **FM/PM Theory & Binary FSK** | Ch 4.1–4.5, 7.3–7.4 |
 |      |      | Frequency deviation, narrowband vs wideband FM | |
 |      |      | Binary FSK, CPFSK, MSK | |
-| 7    | Mar 10 | **FM Systems & Binary PSK** | Ch 4.6–4.8, 7.2 |
-|      |      | FM generation (VCO, Armstrong), Carson's rule | |
+| 7    | Mar 10 | **FSK Demodulation & BPSK Theory** | Ch 4.6–4.8, 7.3–7.4 |
+|      |      | Coherent/non-coherent FSK demodulation, PLL | |
 |      |      | BPSK fundamentals, coherent detection | |
-|      |      | *Baba Yaga's Hut Lab (Part 1)* | |
 | —    | Mar 14–22 | **SPRING BREAK – No Classes** | |
-| 8    | Mar 24 | **Pulse Modulation & Sampling** | Ch 5 |
-|      |      | Sampling theorem (real vs I/Q), Nyquist rate | |
-|      |      | PAM, quantization, PCM, delta modulation | |
-|      |      | *Baba Yaga's Hut Lab (Part 2)* | |
+| 8    | Mar 24 | **HW3 Review & Baba Yaga's Hut** | Ch 4–7 |
+|      |      | Homework 3 review, phasor analysis introduction | |
+|      |      | *Baba Yaga's Hut Lab (Part 1): AM phasor analysis* | |
 
-### Phase 3: Advanced Digital Communications (Weeks 9–11)
+### Phase 3: Noise, ISI & Advanced Digital (Weeks 9–11)
 
 | Week | Date | Topics | Textbook |
 |------|------|--------|----------|
-| 9    | Mar 31 | **Baseband Digital & Spread Spectrum Intro** | Ch 6 |
-|      |      | ISI, eye diagrams, synchronization (PLL, Costas) | |
-|      |      | OFDM basics, spread spectrum (DSSS, FHSS) | |
-|      |      | *GNU Radio Lab 1: FM reception, WiFi spectrum* | |
+| 9    | Mar 31 | **Baba Yaga's Hut Lab (Part 2)** | Ch 4 |
+|      |      | DSB-SC, FM, PM phasor analysis | |
+|      |      | *(One class only — Holy Thursday cancelled)* | |
 | —    | Apr 3–6 | **EASTER BREAK – No Classes** | |
-| 10   | Apr 7 | **CDMA & M-ary Modulation** | Ch 7.5–7.7 |
-|      |      | CDMA, Walsh codes, GPS, 3G cellular | |
+| 10   | Apr 7 | **Noise, SNR & Link Budgets** | Ch 9, 11.1–11.7 |
+|      |      | Noise fundamentals, thermal noise, SNR | |
+|      |      | Link budgets, path loss, ISI, eye diagrams | |
+|      |      | *GNU Radio Lab 1: FM reception, WiFi spectrum* | |
+| 11   | Apr 14 | **OFDM, CDMA & M-ary Modulation** | Ch 5–7 |
+|      |      | OFDM basics, spread spectrum (DSSS, FHSS), CDMA | |
 |      |      | QPSK, M-ary PSK, QAM (16/64/256-QAM), EVM | |
 |      |      | FT8 digital mode with Costas arrays | |
 |      |      | *Python Labs 3 & 4: CDMA, QPSK/QAM/EVM* | |
 |      |      | *W3USR: Digital modes (FT8, APRS)* | |
-| 11   | Apr 14 | **EXAM 2** / Probability Intro | Ch 4–7 |
 
-### Phase 4: Noise, Probability & System Performance (Weeks 12–15)
+### Phase 4: Exams, Probability & System Performance (Weeks 12–15)
 
 | Week | Date | Topics | Textbook |
 |------|------|--------|----------|
-| 12   | Apr 21 | **Probability & Random Variables** | Ch 8.1–8.4 |
-|      |      | Probability axioms, Bayes' theorem, Shannon capacity | |
-|      |      | PDFs, CDFs, Gaussian distribution, Q-function | |
-| 13   | Apr 28 | **Noise in Communication Systems** | Ch 9, 11.1–11.3 |
-|      |      | Thermal noise, AWGN, noise figure | |
-|      |      | SNR in AM and FM, FM threshold effect | |
-|      |      | *W3USR: Digital modes (FT8, APRS)* | |
-| 14   | May 5 | **Digital Performance & Channel Coding** | Ch 10 |
-|      |      | BER fundamentals, matched filtering | |
-|      |      | BER for BPSK, FSK, QAM; EVM vs BER | |
-|      |      | Channel coding: LDPC, Turbo, Polar codes | |
+| 12   | Apr 21 | **EXAM 2** / Exam Review & Probability Intro | Ch 4–7, 9, 11 |
+|      |      | Exam 2 (Tue), exam review + probability basics (Thu) | |
+| 13   | Apr 28 | **Probability & Channel Capacity** | Ch 8.1–8.4 |
+|      |      | Bayes' theorem, Shannon capacity, channel coding | |
+|      |      | Random variables, PDFs, CDFs, Gaussian distribution | |
+| 14   | May 5 | **Noise in Communications & Sampling** | Ch 8.3–9, 5 |
+|      |      | Noise in analog communications, AWGN, noise figure | |
+|      |      | Sampling theorem, quantization, PCM | |
 |      |      | *GNU Radio Lab 2: Noise and SNR analysis* | |
-| 15   | May 12 | **Link Budgets & Modern Systems** | Ch 11.4–11.7 |
-|      |      | Link budget calculations, path loss | |
-|      |      | WiFi, LTE, 5G overview; SDR concepts | |
+| 15   | May 12 | **BER & Matched Filtering** | Ch 10 |
+|      |      | BER fundamentals, matched filtering, BER simulation | |
 |      |      | *Python Lab 5: BER simulation* | |
 |      |      | *May 14: No class (Hamvention)* | |
 

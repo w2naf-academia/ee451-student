@@ -17,7 +17,7 @@ Reading quizzes administered through Brightspace at the beginning of selected cl
 | 7 | Thu, Feb 19 | SSB, VSB, Receiver Architectures, ASK/OOK | Chapter 3.6-3.8, 7.1-7.2 |
 | 11 | Thu, Mar 5 | FM/PM Theory and Modulation | Chapter 4.1-4.5 |
 | 13 | Thu, Mar 12 | FM Generation/Demodulation, FSK/BPSK | Chapter 4.6-4.8, 7.3-7.4 |
-| 17 | Tue, Apr 7 | Pulse Modulation and Baseband Digital Transmission | Chapter 5, 6 |
+| 18 | Thu, Apr 9 | Noise in Communications Systems | Chapter 9 |
 | 22 | Thu, Apr 23 | Probability and Random Variables | Chapter 8.1-8.2 |
 | 25 | Tue, May 5 | Random Variables, Noise in Analog Communications | Chapter 8.3-8.4, 9 |
 | 27 | Tue, May 12 | Digital Performance, BER, System Noise Calculations | Chapter 10, 11.1-11.3 |
@@ -30,7 +30,7 @@ Reading quizzes administered through Brightspace at the beginning of selected cl
 |------------|----------|-----|--------|
 | Homework 1 | Thu, Jan 29 | Thu, Feb 5 | Complex numbers, phasors, signals |
 | Homework 2 | Thu, Feb 12 | Thu, Feb 19 | AM and ASK |
-| Homework 3 | Thu, Mar 5 | Thu, Mar 12 | FM, PM, FSK, BPSK |
+| Homework 3 | Thu, Mar 5 | Tue, Mar 24 | FM, PM, FSK, BPSK |
 | Homework 4 | Thu, Apr 16 | Thu, Apr 23 | M-ary modulation, QAM, EVM |
 | Homework 5 | Thu, Apr 23 | Thu, May 7 | Probability, noise, SNR |
 
@@ -41,7 +41,7 @@ Reading quizzes administered through Brightspace at the beginning of selected cl
 | Exam | Date | Coverage |
 |------|------|----------|
 | Exam 1 | Thu, Feb 26 | Chapters 2-3, 7.1-7.2 (Fourier Analysis & AM) |
-| Exam 2 | Tue, Apr 21 | Chapters 4-7 (Modulation & Digital Systems) |
+| Exam 2 | Tue, Apr 21 | Chapters 4-7, 9, 11 (Modulation, Noise & Link Budgets) |
 | Final Exam | Thu, May 21 | Comprehensive (emphasis on Chapters 8-11) |
 
 ---
@@ -63,13 +63,13 @@ Reading quizzes administered through Brightspace at the beginning of selected cl
 | Lab | Week | Date | Topic |
 |-----|------|------|-------|
 | GNU Radio Lab 1 | 10 | Thu, Apr 9 | FM Broadcast Reception & WiFi Spectrum Analysis |
-| GNU Radio Lab 2 | 14 | Thu, May 7 | Noise Analysis and SNR Measurement |
+| GNU Radio Lab 2 | 14 | Tue, May 5 | Noise Analysis and SNR Measurement |
 
 ### Baba Yaga's Hut Phasor Labs
 
 | Session | Week | Date | Topic |
 |---------|------|------|-------|
-| Part 1 | 8 | Tue, Mar 24 | AM Phasor Analysis with I/Q Demodulation |
+| Part 1 | 8 | Thu, Mar 26 | AM Phasor Analysis with I/Q Demodulation |
 | Part 2 | 9 | Tue, Mar 31 | DSB-SC, FM, and PM Phasor Analysis |
 
 ### W3USR Amateur Radio Station Activities
@@ -77,7 +77,7 @@ Reading quizzes administered through Brightspace at the beginning of selected cl
 | Activity | Week | Date | Topic |
 |----------|------|------|-------|
 | W3USR Activity 1 | 4 | Thu, Feb 19 | HF Station Tour and SSB/AM Reception |
-| W3USR Activity 2 | 13 | Tue, Apr 28 | Digital Modes (FT8, APRS, PSK31) |
+| W3USR Activity 2 | 11 | Thu, Apr 16 | Digital Modes (FT8, APRS, PSK31) |
 
 **Optional Extra Credit:** W3USR Satellite Communications activity available by arrangement (contact instructor)
 
@@ -250,27 +250,28 @@ Reading quizzes administered through Brightspace at the beginning of selected cl
 ### Week 7
 
 #### Lesson 12 - Tuesday, March 10
-**Binary FSK & MSK**
-- Binary Frequency Shift Keying (FSK)
-- Continuous Phase FSK (CPFSK)
-- Minimum Shift Keying (MSK)
-- FSK as digital counterpart to FM
-- Comparison of FSK bandwidth to FM (Carson's rule application)
-- Reading: Chapter 7.3-7.4, Chapter 4.6-4.8 (in preparation for Reading Quiz 5 in Lesson 13)
+**FSK Demodulation & Applications**
+- Coherent FSK detection (matched filters / correlators)
+- Non-coherent FSK detection (envelope detection)
+- Frequency discriminator for FM/FSK demodulation
+- Phase-Locked Loop (PLL) for FM demodulation
+- BER comparison: coherent vs non-coherent FSK vs BPSK
+- Practical applications: Bell 103 modem, Caller ID, APRS, Bluetooth GFSK
+- Reading: Chapter 4.6-4.8, 7.3-7.4 (in preparation for Reading Quiz 5 in Lesson 13)
 
 #### Lesson 13 - Thursday, March 12
-**FM Generation & Demodulation**
-- Direct FM generation (VCO)
-- Indirect FM generation (Armstrong method)
-- Frequency discriminators
-- PLL-based FM demodulation (operates on IQ baseband)
+**BPSK Theory & Demodulation Essentials**
+- Binary Phase Shift Keying fundamentals
+- BPSK signal generation and constellation
+- Coherent BPSK detection (correlation receiver, Costas loop overview)
+- Why BPSK cannot use envelope detection (phase information requires coherent reference)
+- BER performance of BPSK
+- Spectral efficiency comparison: ASK vs FSK vs BPSK
 
 **📝 READING QUIZ 5**
 - Topic: FM Generation/Demodulation, FSK/BPSK
 - Reading: Chapter 4.6-4.8, 7.3-7.4
 - Administered via Brightspace at beginning of class
-
-**Homework 3 Due**
 
 ---
 
@@ -281,14 +282,21 @@ Reading quizzes administered through Brightspace at the beginning of selected cl
 ### Week 8
 
 #### Lesson 14 - Tuesday, March 24
-**Binary PSK & Carson's Rule**
-- Binary Phase Shift Keying (BPSK) fundamentals
-- BPSK as phase modulation of IQ carrier
-- Coherent detection of BPSK (requires IQ demodulation)
-- Carson's rule for FM bandwidth
-- Pre-emphasis and de-emphasis in FM
+**Homework 3 Review & Baba Yaga Introduction**
+- Return and review Homework 3 solutions (~45 min)
+  - Common mistakes and key takeaways
+  - FM/PM problems, Carson's rule, FSK/MSK, BPSK
+- Introduction to Baba Yaga's Hut phasor lab (~25 min)
+  - Lab objectives and equipment overview
+  - I/Q demodulator concept and setup
+  - Safety briefing and pair assignments
+  - Reference: w8edu_cwru/the-hut-on-phasors-legs.pdf
 
-**Lab Activity:** **"Baba Yaga's Hut" - Phasor Analysis Lab (Part 1 of 2)**
+**Homework 3 Due**
+
+#### Lesson 15 - Thursday, March 26
+**"Baba Yaga's Hut" - Phasor Analysis Lab (Part 1 of 2)**
+- Full 75-minute lab session
 - Build I/Q demodulator using function generators and oscilloscopes
 - Examine AM signals in time, frequency, and phasor domains simultaneously
 - Vary modulation depth and observe effects in all three representations
@@ -296,38 +304,21 @@ Reading quizzes administered through Brightspace at the beginning of selected cl
 - Students work in pairs on the one shared setup
 - Reference: w8edu_cwru/the-hut-on-phasors-legs.pdf
 
-#### Lesson 15 - Thursday, March 26
-**Pulse Modulation & Sampling Theorem**
-- Sampling theorem and Nyquist rate
-  - **Real sampling:** 2× bandwidth (traditional approach)
-  - **IQ (complex) sampling:** 1× bandwidth (what SDRs like RTL-SDR use)
-  - Why the difference: IQ sampling separates positive and negative frequencies
-- Aliasing and anti-aliasing filters
-- Pulse Amplitude Modulation (PAM)
-- Natural and flat-top sampling
-- Reading: Chapter 5 (part 1 of reading for Reading Quiz 6 in Lesson 17; see also Chapter 6 in Lesson 16)
-
 ---
 
-## Phase 3: Advanced Digital Communications (Weeks 9-11)
+## Phase 3: Noise, ISI & Advanced Digital (Weeks 9-11)
 
 ### Week 9
 
 #### Lesson 16 - Tuesday, March 31
-**PCM & Delta Modulation**
-- Quantization and quantization noise
-- Pulse Code Modulation (PCM)
-- Companding (μ-law and A-law)
-- Delta modulation and adaptive delta modulation
-- Line codes (NRZ, RZ, Manchester, etc.)
-- Reading: Chapter 6 (part 2 of reading for Reading Quiz 6 in Lesson 17; see also Chapter 5 in Lesson 15)
-
-**Lab:** **"Baba Yaga's Hut" - Phasor Analysis Lab (Part 2 of 2)**
+**"Baba Yaga's Hut" - Phasor Analysis Lab (Part 2 of 2)**
+- Full 75-minute lab session
 - Examine DSB-SC (suppressed carrier) signals
 - Explore FM and PM in phasor representation
 - Vary carrier phase and observe rotation in phasor domain
 - Complete lab worksheets and analysis
 - Students work in pairs on the one shared setup
+- Reading: Chapter 9 (in preparation for Reading Quiz 6 in Lesson 18)
 
 #### Thursday, April 2 - NO CLASS (Holy Thursday)
 
@@ -340,39 +331,33 @@ Reading quizzes administered through Brightspace at the beginning of selected cl
 ### Week 10
 
 #### Lesson 17 - Tuesday, April 7
-**Baseband Digital Transmission & Synchronization**
-- Intersymbol Interference (ISI): causes and effects
-- Eye diagrams: open vs. closed, noise margin, timing margin, jitter
-- Nyquist criterion for zero-ISI pulse shaping
-- Raised cosine filtering (roll-off factor α, bandwidth tradeoff)
-- Multipath propagation and OFDM preview (WiFi, LTE)
-- Carrier and symbol timing synchronization
-- Phase-Locked Loop (PLL) and Costas loop for carrier recovery
-- Timing recovery methods: early-late gate, Gardner algorithm
-- Python example: eye diagram generation with raised cosine filter
-- Reading: Chapter 5, 6
-
-**📝 READING QUIZ 6**
-- Topic: Pulse Modulation and Baseband Digital Transmission
-- Reading: Chapter 5, 6
-- Administered via Brightspace at beginning of class
+**Noise Fundamentals & SNR**
+- Thermal noise generation and statistical properties
+- White noise and Additive White Gaussian Noise (AWGN) channel model
+- Noise power spectral density: N₀/2
+- Signal-to-noise ratio (SNR) definition and calculation
+- Noise figure and noise temperature
+- Cascaded noise figure (Friis formula)
+- System noise temperature and receiver design implications
+- Reading: Chapter 9
 
 #### Lesson 18 - Thursday, April 9
-**ISI Mitigation, OFDM & Spread Spectrum Introduction**
-- OFDM fundamentals: divide wideband channel into narrowband subcarriers
-- Subcarrier orthogonality and FFT/IFFT implementation
-- Cyclic prefix: absorbs multipath delay, converts to circular convolution
-- WiFi 802.11a/g OFDM parameters (64 subcarriers, 312.5 kHz spacing, 4 μs symbol)
-- OFDM advantages (multipath robust, adaptive modulation) and disadvantages (PAPR)
-- Direct Sequence Spread Spectrum (DSSS) introduction
-- Processing gain: spread BW / data BW (GPS example: 43 dB)
-- Frequency Hopping Spread Spectrum (FHSS) overview (Bluetooth: 79 channels, 1600 hops/sec)
-- Applications: WiFi 802.11b (DSSS), GPS (DSSS), Bluetooth (FHSS), military
-- Reading: Chapter 6, Supplemental materials
+**Link Budgets, ISI & Eye Diagrams + GNU Radio Lab**
 
-**Lab:** GNU Radio Lab 1 - RTL-SDR FM Reception & WiFi Spectrum Analysis
+**Part A: Link Budgets & ISI Overview (~30 min)**
+- Friis transmission equation and free-space path loss
+- EIRP, received power, and link margin
+- Complete link budget example (satellite or point-to-point)
+- Intersymbol Interference (ISI) overview: causes, eye diagrams, raised cosine filtering
 
-**Part 1: FM Broadcast Reception (30 min)**
+**📝 READING QUIZ 6**
+- Topic: Noise in Communications Systems
+- Reading: Chapter 9
+- Administered via Brightspace at beginning of class
+
+**Part B: GNU Radio Lab 1 - RTL-SDR FM Reception & WiFi Spectrum Analysis (~40 min)**
+
+**Lab Activity 1: FM Broadcast Reception (20 min)**
 - Introduction to GNU Radio Companion
 - Connect and configure RTL-SDR (outputs IQ samples)
 - Build FM broadcast receiver flowgraph:
@@ -384,16 +369,14 @@ Reading quizzes administered through Brightspace at the beginning of selected cl
 - Visualize waterfall and spectrum displays
 - Listen to demodulated audio
 
-**Part 2: Understanding FM Demodulation (15 min)**
+**Lab Activity 2: Understanding FM Demodulation (10 min)**
 - Examine WBFM block internals (discriminator + de-emphasis)
 - Discuss pre-emphasis/de-emphasis (75 μs time constant in US)
 - Why limiter is critical: removes amplitude noise before FM demod
-- Note: This is mono FM - stereo requires additional 19 kHz pilot tone processing
 
-**Part 3: WiFi Spectrum Analysis (15 min)**
+**Lab Activity 3: WiFi Spectrum Analysis (10 min)**
 - Retune RTL-SDR to 2.4 GHz WiFi band
-- Capture WiFi signals
-- Identify 802.11g/n preambles and OFDM spectrum shape
+- Capture WiFi signals and identify OFDM spectrum shape
 - Compare OFDM spectrum (flat-topped, rectangular) to single-carrier FM (narrow, peaked)
 
 ---
@@ -401,8 +384,12 @@ Reading quizzes administered through Brightspace at the beginning of selected cl
 ### Week 11
 
 #### Lesson 19 - Tuesday, April 14
-**Spread Spectrum & CDMA**
-- Deep dive into DSSS processing gain and interference rejection
+**OFDM, Spread Spectrum & CDMA**
+- OFDM fundamentals: subcarrier orthogonality, FFT/IFFT, cyclic prefix
+- WiFi 802.11a/g OFDM parameters (64 subcarriers, 312.5 kHz spacing, 4 μs symbol)
+- OFDM advantages (multipath robust, adaptive modulation) and disadvantages (PAPR)
+- Direct Sequence Spread Spectrum (DSSS): processing gain, interference rejection
+- Frequency Hopping Spread Spectrum (FHSS) overview (Bluetooth: 79 channels, 1600 hops/sec)
 - PN sequences: m-sequences, Gold codes, autocorrelation properties
 - CDMA (Code Division Multiple Access) fundamentals
 - Walsh codes and orthogonality
@@ -451,7 +438,7 @@ Reading quizzes administered through Brightspace at the beginning of selected cl
 
 ---
 
-## Phase 4: Noise, Probability & System Performance (Weeks 12-15)
+## Phase 4: Exams, Probability & System Performance (Weeks 12-15)
 
 ### Week 12
 
@@ -487,28 +474,23 @@ Reading quizzes administered through Brightspace at the beginning of selected cl
 ### Week 13
 
 #### Lesson 23 - Tuesday, April 28
-**FT8 & Modern Digital Modes**
-- Carrier and symbol timing synchronization concepts
-- Phase-locked loops (PLL) and Costas loops for IQ carrier recovery
-- Why synchronization is critical in practice
+**Probability Fundamentals & Channel Capacity**
+- Conditional probability review: P(A|B) = P(A ∩ B) / P(B)
+- Bayes' theorem and Maximum A Posteriori (MAP) detection
+- Worked examples: binary detection, MAP symbol decision
 
-**FT8: A Modern Weak-Signal Mode**
-- FT8 as practical example of 8-FSK modulation
-- Technical parameters: 50 Hz bandwidth, 15-second transmit cycles
-- Weak-signal performance: operates reliably at -20 dB SNR
-- Time synchronization requirements (GPS/NTP)
-- Costas arrays for tone sequence generation
-- Why Costas arrays: optimal autocorrelation allows multiple overlapping signals
-- Forward error correction using LDPC codes (preview of Week 14)
-- Why FT8 revolutionized HF amateur radio communications
+**Shannon's Channel Capacity Theorem**
+- Channel capacity definition: maximum reliable data rate
+- Shannon-Hartley theorem: C = B log₂(1 + SNR) bits/sec
+- Spectral efficiency limit: η_max = log₂(1 + SNR) bits/s/Hz
+- Bandwidth vs. SNR trade-offs
+- Worked examples: WiFi and LTE capacity calculations
 
-**Lab Activity:** W3USR Digital Modes Demonstration
-- Observe FT8 operation on HF (20m, 40m bands)
-- Watch waterfall display showing 8-FSK tones
-- Observe automatic decoding and time synchronization
-- Listen to APRS on 2m (144.390 MHz)
-- Demonstrate PSK31 and RTTY if time permits
-- Show computer integration for digital mode decoding
+**Channel Coding Introduction**
+- Why channel coding: add redundancy for error correction
+- Simple example: repetition code (rate 1/3)
+- Modern codes: LDPC, Turbo, Polar (approaching Shannon limit)
+- Practical system design trade-off example
 
 #### Lesson 24 - Thursday, April 30
 **Random Variables & Gaussian Distribution**
@@ -531,25 +513,27 @@ Reading quizzes administered through Brightspace at the beginning of selected cl
 - Noise power spectral density
 - Additive White Gaussian Noise (AWGN)
 - Noise figure and noise temperature
+- SNR calculations for AM and FM systems
 
 **📝 READING QUIZ 8**
 - Topic: Random Variables, Noise in Analog Communications
 - Reading: Chapter 8.3-8.4, 9
 - Administered via Brightspace at beginning of class
 
-#### Lesson 26 - Thursday, May 7
-**Noise in Analog Systems**
-- SNR calculations for AM systems
-- Noise performance of DSB-SC and SSB
-- FM noise performance and threshold effect
-- FM improvement over AM
-- Reading: Chapter 11.1-11.3, Chapter 10 (in preparation for Reading Quiz 9 in Lesson 27)
-
 **Lab:** GNU Radio Lab 2 - Noise and SNR Analysis
 - Add AWGN to AM and FM signals
 - Measure SNR using spectrum analyzer blocks
 - Compare noise performance of AM vs. FM
 - Observe FM threshold effect
+
+#### Lesson 26 - Thursday, May 7
+**Data Communication Systems: Sampling & Quantization**
+- Sampling theorem, Nyquist rate, aliasing
+- Quantization noise and SQNR
+- Pulse Code Modulation (PCM)
+- Companding (μ-law and A-law)
+- Delta modulation and adaptive delta modulation
+- Reading: Chapter 10 (in preparation for Reading Quiz 9 in Lesson 27)
 
 **Homework 5 Due**
 
@@ -592,4 +576,4 @@ Reading quizzes administered through Brightspace at the beginning of selected cl
 
 ---
 
-*Last updated: January 31, 2026*
+*Last updated: March 8, 2026*

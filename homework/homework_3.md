@@ -98,11 +98,11 @@ A binary FSK system transmits data at 1200 bits/s using:
 
 **(a)** Write the signal expressions $s_0(t)$ and $s_1(t)$ for the two binary symbols. (2 points)
 
-**(b)** What is the frequency separation $\Delta f = |f_1 - f_0|$? (2 points)
+**(b)** What is the center frequency $f_c$ and the frequency deviation $\Delta f$ (deviation from $f_c$)? (2 points)
 
-**(c)** Calculate the modulation index $h = \Delta f \cdot T_b$ where $T_b$ is the bit duration. (2 points)
+**(c)** Calculate the modulation index $h = \frac{2\Delta f}{R_b}$ where $R_b$ is the bit rate. (2 points)
 
-**(d)** For coherent FSK detection, the minimum frequency separation for orthogonality is $\Delta f = \frac{1}{2T_b}$. Is this FSK system using orthogonal tones? (2 points)
+**(d)** For coherent FSK detection, the minimum frequency deviation for orthogonality is $\Delta f = \frac{R_b}{4}$. Is this FSK system using orthogonal tones? (2 points)
 
 **(e)** Estimate the bandwidth using Carson's rule, treating FSK as FM with a rectangular baseband signal. (2 points)
 
@@ -114,7 +114,7 @@ MSK is a special case of continuous-phase FSK (CPFSK) with modulation index $h =
 
 **(a)** If the bit rate is $R_b = 2400$ bps, what is the bit duration $T_b$? (2 points)
 
-**(b)** Given $h = 0.5 = \Delta f \cdot T_b$, calculate the required frequency separation $\Delta f$. (2 points)
+**(b)** Given $h = 0.5 = \frac{2\Delta f}{R_b}$, calculate the required frequency deviation $\Delta f$. (2 points)
 
 **(c)** What are the two frequencies $f_0$ and $f_1$ if the center frequency is 1800 Hz? (3 points)
 
@@ -156,6 +156,7 @@ Commercial FM stereo radio in the US transmits a composite baseband signal with 
 - Pilot tone: 19 kHz
 - L-R stereo difference on a 38 kHz subcarrier: 23-53 kHz
 - RDS (Radio Data System) on a 57 kHz subcarrier: 55.5-58.5 kHz
+- Some stations optionally add an SCA (Subsidiary Communications Authorization) subcarrier at 67 kHz for secondary audio services (e.g., background music, reading services for the blind)
 
 **(a)** What is the highest frequency component in the composite baseband signal (not including SCA)? (2 points)
 
@@ -163,7 +164,7 @@ Commercial FM stereo radio in the US transmits a composite baseband signal with 
 
 **(c)** FM stations are allocated 200 kHz of bandwidth. Does your calculated bandwidth fit? What does this imply about Carson's rule as an approximation? (3 points)
 
-**(d)** Some stations add an SCA (Subsidiary Communications Authorization) subcarrier at 67 kHz, extending the composite baseband to ~75 kHz. What is the Carson's rule bandwidth now, and how do stations manage to stay within the 200 kHz allocation? (2 points)
+**(d)** Some stations add an SCA subcarrier at 67 kHz, extending the composite baseband to ~75 kHz. What is the Carson's rule bandwidth now, and how do stations manage to stay within the 200 kHz allocation? (2 points)
 
 ---
 
@@ -188,9 +189,11 @@ For single-tone FM with $\beta = 2$:
 
 For the FM signal $s(t) = 10\cos[2\pi \cdot 100 \times 10^6 \cdot t + 50\sin(2\pi \cdot 1000 \cdot t)]$:
 
-**(a)** Identify the carrier frequency $f_c$, message frequency $f_m$, and the modulation index $\beta$. (3 points)
+**(a)** Identify the carrier amplitude $A_c$, carrier frequency $f_c$, message frequency $f_m$, and the modulation index $\beta$. (2 points)
 
-**(b)** Calculate the frequency deviation $\Delta f$. (2 points)
+**(b)** Calculate the frequency deviation $\Delta f$. Is this NBFM or WBFM? (1 point)
+
+**(c)** Use Carson's rule to estimate the transmission bandwidth. (2 points)
 
 **Hint:** The general form is $s(t) = A_c\cos[2\pi f_c t + \beta\sin(2\pi f_m t)]$ for single-tone FM.
 
